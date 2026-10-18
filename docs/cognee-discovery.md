@@ -6,7 +6,7 @@ Problem fixed before discovery: Python Dependency Repair for a Fast/Flash-tier c
 
 Pinned canonical Index: `14a2182e2d6d0ecd851cef118906431b2c851aaa` ([commit](https://github.com/opensiro/vsm-harness-index/commit/14a2182e2d6d0ecd851cef118906431b2c851aaa)).
 
-Pinned public OpenSiro Cognee connector: `d176484e85da55c84450d67040cb4a2d096353c7` ([review branch commit](https://github.com/opensiro/cognee-community/commit/d176484e85da55c84450d67040cb4a2d096353c7)); not an upstream release.
+Pinned public Opensiro Cognee connector: `d176484e85da55c84450d67040cb4a2d096353c7` ([review branch commit](https://github.com/opensiro/cognee-community/commit/d176484e85da55c84450d67040cb4a2d096353c7)); not an upstream release.
 
 Connector compatibility: the pinned branch expects flat `assessments/<id>.md`; the pinned Index now uses `assessments/<first-two-id-characters>/<id>.md`. Exactly one local path check was changed; the patch is in [preflight receipts](../receipts/preflight/connector-shard-compat.patch). This is build-tool compatibility, not a harness mechanism.
 
@@ -24,6 +24,22 @@ The public assessment grades are **architectural function/ownership classificati
 
 All results, including failures, will be added chronologically. The initial verification actions preceded the creation of the trace file and are explicitly labelled in [decision-trace.jsonl](../traces/decision-trace.jsonl); they are not misrepresented as contemporaneous logging.
 
+
+## Search coverage clarification (post-experiment documentation)
+
+Three distinct surfaces were used. Do not conflate them:
+
+| Surface | What this experiment actually did |
+| --- | --- |
+| Source ingestion | Imported full Markdown bytes of each of the 128 pinned included assessments using the connector's DLT source; retained their identity and document SHA256. |
+| Structured graph | Stored typed harness/assessment records, six literal autonomy facts per assessment (768 total), plus assessment-level primary-evidence entries and provenance links. |
+| Lexical retrieval | Created exactly six Cognee DocumentChunk nodes per assessment, by extracting the six function sections (S1, S2, S3, S3*, S4, S5). The seven CHUNKS_LEXICAL queries searched these 768 chunks; they did **not** search the full Markdown body. |
+
+Thus the full assessment was **ingested**, but only function-specific sections were **indexed for the demonstrated lexical search**. General repository architecture, review-boundary discussion, and conclusions outside those function sections were not part of that lexical search unless separately inspected later. The generated Index TLDR.md was **not** used as the search source.
+
+Implementation evidence: [connector native source](https://github.com/opensiro/cognee-community/blob/d176484e85da55c84450d67040cb4a2d096353c7/packages/connector/opensiro-vsm/cognee_community_connector_opensiro_vsm/native.py) (dlt_source ingests raw bytes; chunks selects six function headings); [local stage1 code](../tools/stage1.py) (SearchType.CHUNKS_LEXICAL); [raw query outputs](../receipts/discovery/native-lexical-results.json) and [query plan](../receipts/preflight/query-plan.json). Reading complete canonical assessments and pinned upstream implementation code was a later manual source-inspection stage, not a Cognee full-text retrieval result.
+
+This clarification is retrospective documentation only; it does **not** change archived query receipts, data selection, experimental chronology, or original results. Broader full-body search is a future improvement requiring a new indexed dataset and its own search/audit receipts. It was **not implemented or evaluated** in this experiment.
 
 ## Actual Stage 1 execution and limitations
 

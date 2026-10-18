@@ -1,6 +1,6 @@
-# OpenSiro — Cognee-first Harness Construction (Python Dependency Repair)
+# Opensiro — Cognee-first Harness Construction (Python Dependency Repair)
 
-This public experiment demonstrates the **causal build-time** use of Cognee and the OpenSiro VSM Harness Index to identify, compare and select one design mechanism **before** building a tiny coding-agent harness.
+This public experiment demonstrates the **causal build-time** use of Cognee and the Opensiro VSM Harness Index to identify, compare and select one design mechanism **before** building a tiny coding-agent harness.
 
 ## Traceable chronology
 
@@ -10,6 +10,8 @@ This public experiment demonstrates the **causal build-time** use of Cognee and 
 4. Seven preregistered [Cognee lexical queries](receipts/preflight/query-plan.json) produced [original native results](receipts/discovery/native-lexical-results.json) and [all-hits index](receipts/discovery/hit-index.json), **including irrelevant negative-control results**.
 5. [Post-discovery shortlist](reports/post-discovery-shortlist.md) → [pinned upstream comparison](reports/candidate-comparison.md) → [architecture decision](docs/architecture-decision.md).
 6. **Baseline** versus **adapted** harness and [evaluation](reports/evaluation.md). The single adaptation is a *fresh post-mutation observed-test gate with bounded feedback*, not a copied platform.
+
+**Reusable build-time procedure:** [Cognee-first harness construction skill](skills/build-harness-cognee-first/SKILL.md) (experimental; not the canonical VSM assessment methodology). The [case-study guide](skills/build-harness-cognee-first/references/case-study.md) explains which observations can and cannot be generalized.
 
 [Append-only Decision Trace](traces/decision-trace.jsonl) · [Receipt checksums](receipts/sha256-manifest.json) · [Final 9/9 review](receipts/evaluation/final-pr-review-validation.log) · [Experiment PR #1](https://github.com/opensiro/harness-build-example-flash-api/pull/1).
 
