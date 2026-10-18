@@ -2,6 +2,14 @@
 
 This public experiment demonstrates the **causal build-time** use of Cognee and the OpenSiro VSM Harness Index to identify, compare and select one design mechanism **before** building a tiny coding-agent harness.
 
+## Intended research outcome — harness development, not model benchmarking
+
+This case study examines the **engineering construction cycle**: define a task → use Cognee to discover existing Opensiro VSM assessments → inspect their pinned upstream code → compare mechanisms → record a justified choice → implement the resulting harness. The [development-process scope note](docs/DEVELOPMENT_PIPELINE_SCOPE.md) maps each stage to public evidence and distinguishes original observations from later explanation.
+
+**The output being evaluated is the provenance and repeatability of the architecture-selection/build process, not the coding success rate of the new agent.** The scripted baseline/adapted task comparison is an extra engineering demonstration; a real Flash-model run or performance uplift test is **not required** to complete this construction case. A source artifact can be built without treating unperformed runtime/model validation as a research failure.
+
+The historical Cognee run imported complete Markdown for 128 assessments, but its native lexical search indexed **only six VSM-function chunks per assessment** (768 sections); not full-document search, and not `TLDR.md`. This is a scope limitation of retrieval, not proof that the complete text was searched.
+
 ## Traceable chronology
 
 1. [Problem and dataset](docs/cognee-discovery.md) fixed before queries; Index commit `14a2182e2d6d0ecd851cef118906431b2c851aaa`, public connector review commit `d176484e85da55c84450d67040cb4a2d096353c7` plus one disclosed shard-layout fix.
