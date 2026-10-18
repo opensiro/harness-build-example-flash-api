@@ -1,6 +1,6 @@
 {
   "algorithm": "sha256",
-  "created_utc": "2026-10-18T18:02:59.444688+00:00",
+  "created_utc": "2026-10-18T18:06:25.988758+00:00",
   "files": {
     "receipts/audit/audit-stdout.log": "0ae50602d3b0d0b6e2f22608027bc12c5b4aeb4c5fa2d0fde1a90694305984a7",
     "receipts/audit/independent-audit.json": "fe5fc9dedd293a78d9270d154b0ba5d752a49e0c2d6345388649bdbef6e74147",
@@ -8,6 +8,7 @@
     "receipts/discovery/discovery-stdout.log": "00b297b1f4575cb60aedd860f2de6d5e74092cf151b96813f5b991a2d2e72d13",
     "receipts/discovery/hit-index.json": "1c18986bb3002bfebb545ac59a83300e5d7c91e658cee84fa2d62c9f50f4d848",
     "receipts/discovery/native-lexical-results.json": "de64a3d96648754fd0c938af9a5db563bfc0b4922fe27899561e7722813f3a3a",
+    "receipts/evaluation/clean-clone-reproduction.json": "8279eaea33dbe70c8e7be67dc9d0ba28881a145d3d1d193c34ca9664bf8bd202",
     "receipts/evaluation/evaluation-stdout.log": "d8fdf33bf04bf25e4c857a6ee962690c7972ebdbe1ca9cb619251580ddd61de3",
     "receipts/evaluation/evaluation-v2-stdout.log": "d8fdf33bf04bf25e4c857a6ee962690c7972ebdbe1ca9cb619251580ddd61de3",
     "receipts/evaluation/scripted-results-v2.json": "773c71c99e39ead0b728de202dbcd0e433d9b9ffb10499efa04d317eaf4220dd",
