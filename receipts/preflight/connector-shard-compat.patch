@@ -1,0 +1,13 @@
+diff --git a/packages/connector/opensiro-vsm/cognee_community_connector_opensiro_vsm/source.py b/packages/connector/opensiro-vsm/cognee_community_connector_opensiro_vsm/source.py
+index ee2790d..049af69 100644
+--- a/packages/connector/opensiro-vsm/cognee_community_connector_opensiro_vsm/source.py
++++ b/packages/connector/opensiro-vsm/cognee_community_connector_opensiro_vsm/source.py
+@@ -146,7 +146,7 @@ def parse_assessment(
+     if not isinstance(meta, dict):
+         raise SourceError(f"{path}: frontmatter must be a map")
+     hid = _require_str(meta, "harness_id", path)
+-    if not re.fullmatch(r"[a-z0-9][a-z0-9._-]*", hid) or path != f"assessments/{hid}.md":
++    if not re.fullmatch(r"[a-z0-9][a-z0-9._-]*", hid) or path != f"assessments/{hid[:2]}/{hid}.md":
+         raise SourceError(f"{path}: invalid/mismatched harness_id: {hid!r}")
+     status = _require_str(meta, "status", path)
+     if status not in STATUSES:
