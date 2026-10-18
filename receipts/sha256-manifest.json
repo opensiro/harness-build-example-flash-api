@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-10-18T17:47:28.498230+00:00",
   "algorithm": "sha256",
+  "created_utc": "2026-10-18T17:59:12.175562+00:00",
   "files": {
     "receipts/audit/audit-stdout.log": "0ae50602d3b0d0b6e2f22608027bc12c5b4aeb4c5fa2d0fde1a90694305984a7",
     "receipts/audit/independent-audit.json": "fe5fc9dedd293a78d9270d154b0ba5d752a49e0c2d6345388649bdbef6e74147",
@@ -8,6 +8,9 @@
     "receipts/discovery/discovery-stdout.log": "00b297b1f4575cb60aedd860f2de6d5e74092cf151b96813f5b991a2d2e72d13",
     "receipts/discovery/hit-index.json": "1c18986bb3002bfebb545ac59a83300e5d7c91e658cee84fa2d62c9f50f4d848",
     "receipts/discovery/native-lexical-results.json": "de64a3d96648754fd0c938af9a5db563bfc0b4922fe27899561e7722813f3a3a",
+    "receipts/evaluation/evaluation-stdout.log": "d8fdf33bf04bf25e4c857a6ee962690c7972ebdbe1ca9cb619251580ddd61de3",
+    "receipts/evaluation/scripted-results.json": "0172c0c03dbff832eed3fd59be73211a8a6b3f32033020ef46ec1bcea0d29f0e",
+    "receipts/evaluation/unit-tests.log": "943ceb48955f1c8d5fe1a6044e51c8ea333f1e2084c0d9d15b8baaab5737a6d9",
     "receipts/import/import-stdout.log": "e6c8a516e67e070e6e314950c9c3cde15481c3b8624bdee3a8e760d7596214df",
     "receipts/import/native-import.json": "27dfcc1da49d861a8708c466bf3cad90866941cd52c0e066da27491404d05d5a",
     "receipts/preflight/connector-shard-compat.patch": "5be20dfacb2f8d48608b2aa4b9d4fbc6a43050e1f799678e8770ecb48a00b070",

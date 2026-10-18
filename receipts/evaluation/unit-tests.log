@@ -1,0 +1,10 @@
+test_baseline_and_adapted_protocol (test_repair.RealFixtureTests.test_baseline_and_adapted_protocol) ... ok
+test_call_cap_cannot_claim_verified (test_repair.RealFixtureTests.test_call_cap_cannot_claim_verified) ... ok
+test_initial_upgraded_dependency_is_broken (test_repair.RealFixtureTests.test_initial_upgraded_dependency_is_broken) ... ok
+test_invalid_target_path_blocked (test_repair.RealFixtureTests.test_invalid_target_path_blocked) ... ok
+test_stale_pass_invalidated (test_repair.RealFixtureTests.test_stale_pass_invalidated) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.408s
+
+OK
