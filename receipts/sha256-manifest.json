@@ -1,0 +1,25 @@
+{
+  "algorithm": "sha256",
+  "created_utc": "2026-10-18T18:26:27Z",
+  "files": {
+    "receipts/audit/audit-stdout.log": "0ae50602d3b0d0b6e2f22608027bc12c5b4aeb4c5fa2d0fde1a90694305984a7",
+    "receipts/audit/independent-audit.json": "fe5fc9dedd293a78d9270d154b0ba5d752a49e0c2d6345388649bdbef6e74147",
+    "receipts/discovery/discovery-hit-summary.stdout": "f9bfdb9fee057efa6d896b74fd376dd252235714f23db84d04804cf9b153a9ec",
+    "receipts/discovery/discovery-stdout.log": "00b297b1f4575cb60aedd860f2de6d5e74092cf151b96813f5b991a2d2e72d13",
+    "receipts/discovery/hit-index.json": "1c18986bb3002bfebb545ac59a83300e5d7c91e658cee84fa2d62c9f50f4d848",
+    "receipts/discovery/native-lexical-results.json": "de64a3d96648754fd0c938af9a5db563bfc0b4922fe27899561e7722813f3a3a",
+    "receipts/evaluation/clean-clone-reproduction.json": "8279eaea33dbe70c8e7be67dc9d0ba28881a145d3d1d193c34ca9664bf8bd202",
+    "receipts/evaluation/evaluation-stdout.log": "d8fdf33bf04bf25e4c857a6ee962690c7972ebdbe1ca9cb619251580ddd61de3",
+    "receipts/evaluation/evaluation-v2-stdout.log": "d8fdf33bf04bf25e4c857a6ee962690c7972ebdbe1ca9cb619251580ddd61de3",
+    "receipts/evaluation/final-pr-review-validation.log": "18baf22bc1db19c207755aadaf1b0167fcea667492977987663b0783a69b3011",
+    "receipts/evaluation/scripted-results-v2.json": "773c71c99e39ead0b728de202dbcd0e433d9b9ffb10499efa04d317eaf4220dd",
+    "receipts/evaluation/scripted-results.json": "0172c0c03dbff832eed3fd59be73211a8a6b3f32033020ef46ec1bcea0d29f0e",
+    "receipts/evaluation/unit-tests-v2.log": "e0b5fa80d69cea2b6cb8b8a9032845984933e1b4eacb47bce8133c0554a4aac8",
+    "receipts/evaluation/unit-tests.log": "943ceb48955f1c8d5fe1a6044e51c8ea333f1e2084c0d9d15b8baaab5737a6d9",
+    "receipts/import/import-stdout.log": "e6c8a516e67e070e6e314950c9c3cde15481c3b8624bdee3a8e760d7596214df",
+    "receipts/import/native-import.json": "27dfcc1da49d861a8708c466bf3cad90866941cd52c0e066da27491404d05d5a",
+    "receipts/preflight/connector-shard-compat.patch": "5be20dfacb2f8d48608b2aa4b9d4fbc6a43050e1f799678e8770ecb48a00b070",
+    "receipts/preflight/query-plan.json": "18b8b59c6dde15fe833d157bd88c01d1b6749aed6218cbc589bf7dc06cb972a5",
+    "receipts/preflight/selection-manifest.json": "f4e4a72a71f71479cda294220ffa4e9a7d9c0a4f7d00f4a77e17f07eefcbcd05"
+  }
+}

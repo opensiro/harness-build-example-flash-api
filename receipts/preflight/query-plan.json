@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "decision": "Precommitted native discovery query plan, before any Cognee search",
+  "dataset": "opensiro-flash-python-repair-20261018-v1",
+  "query_type": "CHUNKS_LEXICAL",
+  "requested_limit_per_query": 12,
+  "notes": "Use Cognee native lexical retrieval over all six VSM section chunks per selected assessment. Preserve raw responses, retrieval errors, zero-overlap and irrelevant hits; scores are relevance not performance. Do not infer upstream architecture solely from retrieved text.",
+  "queries": [
+    {
+      "id": "D01",
+      "text": "dependency upgrade test failure compatibility repair",
+      "intent": "Repair compatibility breaks"
+    },
+    {
+      "id": "D02",
+      "text": "coding agent run tests inspect failure fix patch",
+      "intent": "Execution-feedback loop"
+    },
+    {
+      "id": "D03",
+      "text": "execute shell commands validate changes retry",
+      "intent": "Tools and validation"
+    },
+    {
+      "id": "D04",
+      "text": "python environment package installation recovery",
+      "intent": "Dependency/environment handling"
+    },
+    {
+      "id": "D05",
+      "text": "bounded iterations timeout tool execution retries",
+      "intent": "Small-model bounded operation"
+    },
+    {
+      "id": "D06",
+      "text": "unit test feedback diagnostics coding decisions",
+      "intent": "Feedback-to-action mechanism"
+    },
+    {
+      "id": "D07-negative-control",
+      "text": "astronomy telescope orbital mechanics",
+      "intent": "Negative or irrelevant retrieval control"
+    }
+  ],
+  "gate": "No candidate shortlist or architecture decision until actual import, independent audit, and all seven query receipts exist"
+}

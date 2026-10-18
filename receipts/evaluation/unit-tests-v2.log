@@ -1,0 +1,13 @@
+test_baseline_and_adapted_protocol (test_repair.RealFixtureTests.test_baseline_and_adapted_protocol) ... ok
+test_budget_exhaustion_not_verified_even_after_passing_test (test_repair.RealFixtureTests.test_budget_exhaustion_not_verified_even_after_passing_test) ... ok
+test_call_cap_cannot_claim_verified (test_repair.RealFixtureTests.test_call_cap_cannot_claim_verified) ... ok
+test_initial_upgraded_dependency_is_broken (test_repair.RealFixtureTests.test_initial_upgraded_dependency_is_broken) ... ok
+test_invalid_target_path_blocked (test_repair.RealFixtureTests.test_invalid_target_path_blocked) ... ok
+test_malformed_model_payload_does_not_crash (test_repair.RealFixtureTests.test_malformed_model_payload_does_not_crash) ... ok
+test_openai_compatible_chat_completions_http_shape (test_repair.RealFixtureTests.test_openai_compatible_chat_completions_http_shape) ... ok
+test_stale_pass_invalidated (test_repair.RealFixtureTests.test_stale_pass_invalidated) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.137s
+
+OK

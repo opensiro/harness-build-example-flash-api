@@ -1,0 +1,28 @@
+FINAL PR REVIEW VALIDATION (CPU-VM, clean public clone)
+Observed UTC: 2026-10-18T18:26:27Z
+CODE_SHA=75c3db6589e20e185441ad9cb23b26ad3ef7830f
+COMMAND: PYTHONPATH=src python3 -m unittest discover -s tests -v
+test_baseline_and_adapted_protocol (test_repair.RealFixtureTests.test_baseline_and_adapted_protocol) ... ok
+test_budget_exhaustion_not_verified_even_after_passing_test (test_repair.RealFixtureTests.test_budget_exhaustion_not_verified_even_after_passing_test) ... ok
+test_call_cap_cannot_claim_verified (test_repair.RealFixtureTests.test_call_cap_cannot_claim_verified) ... ok
+test_initial_upgraded_dependency_is_broken (test_repair.RealFixtureTests.test_initial_upgraded_dependency_is_broken) ... ok
+test_invalid_target_path_blocked (test_repair.RealFixtureTests.test_invalid_target_path_blocked) ... ok
+test_malformed_model_payload_does_not_crash (test_repair.RealFixtureTests.test_malformed_model_payload_does_not_crash) ... ok
+test_openai_compatible_chat_completions_http_shape (test_repair.RealFixtureTests.test_openai_compatible_chat_completions_http_shape) ... ok
+test_same_workspace_symlink_target_rejected (test_repair.RealFixtureTests.test_same_workspace_symlink_target_rejected) ... ok
+test_stale_pass_invalidated (test_repair.RealFixtureTests.test_stale_pass_invalidated) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.197s
+
+OK
+COMMAND: PYTHONPATH=src python3 evaluation/run_evaluation.py --backend scripted
+baseline status complete_unverified calls 2 tests 0 final_pass False
+adapted status verified_complete calls 3 tests 2 final_pass True
+BACKEND scripted LLM_UPLIFT_CLAIM False
+COMMAND: sha256 verification against frozen receipt manifest
+FROZEN_RECEIPTS 18 MISMATCHES 0
+COMPARISON_BEFORE_DECISION=PASS
+DECISION_BEFORE_IMPLEMENTATION=PASS
+CHECKOUT_CLEAN=PASS
+EXTERNAL_GITHUB_CI=NOT_ASSERTED; REAL_MODEL_BACKEND=NOT_RUN

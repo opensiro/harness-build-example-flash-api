@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-18T18:04:47Z",
+  "method": "separate clean Git clone of public PR branch on dev-alpha workspace",
+  "source_git_sha": "feb7058aeae1f09053100bc3e29b83947215fd49",
+  "python_version": "3.12.3",
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -v",
+      "status": "PASS",
+      "tests": 8
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 evaluation/run_evaluation.py --backend scripted",
+      "status": "PASS_SCRIPTED_PROTOCOL",
+      "baseline": {
+        "model_calls": 2,
+        "final_tests_pass": false
+      },
+      "adapted": {
+        "model_calls": 3,
+        "final_tests_pass": true
+      }
+    },
+    {
+      "check": "SHA256 content verification against committed receipts/sha256-manifest.json",
+      "status": "PASS",
+      "validated_files": 17,
+      "failures": []
+    },
+    {
+      "check": "Chronological order of Decision Trace: Cognee import success < architecture choice < implementation published",
+      "status": "PASS",
+      "trace_events": 28
+    }
+  ],
+  "model_backed_run": false,
+  "limitations": "Clean clone verifies receipt integrity and offline Python runtime; does not rerun native Cognee ingestion or imply actual model quality."
+}

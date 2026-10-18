@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-18T18:01:04.407479+00:00",
+  "backend": "scripted",
+  "model": "task-specific scripted double, NOT an LLM",
+  "source_git_sha": "c8f439891263bb573e050402db75a35c926a5aca",
+  "python_version": "3.12.3",
+  "same_task": true,
+  "same_max_model_calls": 3,
+  "same_fixed_tool_surface": true,
+  "fixture_file_sha256": {
+    "fixtures/dependency_v2/stringcase/__init__.py": "d75c9ecf01f36e8e38a56bb5a6d0b0c47b435e1002f3b9b35b68f9d7177b4548",
+    "fixtures/project/app.py": "eae302430d6535f462a37e3f732fd1a36de41178186d0616bfdbf4275869edb0",
+    "fixtures/project/tests/test_app.py": "59c243912878972e32fed2ddc5a0628b5f54b21213694af7a079dd1aaff1a37d"
+  },
+  "note": "Scripted double is deliberately conditional on fresh test feedback. It tests gates and protocol causality, not Fast/Flash model performance.",
+  "runs": [
+    {
+      "variant": "baseline",
+      "result": {
+        "status": "complete_unverified",
+        "verified": false,
+        "adapted": false,
+        "max_model_calls": 3,
+        "model_calls": 2,
+        "test_runs": 0,
+        "mutations": 1,
+        "actions": [
+          {
+            "action": "replace",
+            "version": 1,
+            "old": "from stringcase import to_snake",
+            "new": "from stringcase import snake_case"
+          }
+        ],
+        "summary": "Proposed compatibility repair complete."
+      },
+      "independent_final_test": {
+        "pass": false,
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "",
+        "stderr": "test_already_normalized (test_app.RepairTests.test_already_normalized) ... ERROR\ntest_spaces (test_app.RepairTests.test_spaces) ... ERROR\n\n======================================================================\nERROR: test_already_normalized (test_app.RepairTests.test_already_normalized)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/tmp/flash-dep-repair-131r4z9d/project/tests/test_app.py\", line 10, in test_already_normalized\n    self.assertEqual(normalize(\"simple\"), \"simple\")\n                     ^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/flash-dep-repair-131r4z9d/project/app.py\", line 6, in normalize\n    return to_snake(value)\n           ^^^^^^^^\nNameError: name 'to_snake' is not defined\n\n======================================================================\nERROR: test_spaces (test_app.RepairTests.test_spaces)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/tmp/flash-dep-repair-131r4z9d/project/tests/test_app.py\", line 7, in test_spaces\n    self.assertEqual(normalize(\"Hello World\"), \"hello_world\")\n                     ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/flash-dep-repair-131r4z9d/project/app.py\", line 6, in normalize\n    return to_snake(value)\n           ^^^^^^^^\nNameError: name 'to_snake' is not defined\n\n----------------------------------------------------------------------\nRan 2 tests in 0.004s\n\nFAILED (errors=2)\n"
+      },
+      "source_before_sha256": "eae302430d6535f462a37e3f732fd1a36de41178186d0616bfdbf4275869edb0",
+      "source_after_sha256": "88af9395a4cf2aeb0dac3aef745032fc20716a5e2e705e3d48dec600ddde983f",
+      "source_after": "\"\"\"Small project broken after upgrading synthetic stringcase to version 2.\"\"\"\nfrom stringcase import snake_case\n\n\ndef normalize(value: str) -> str:\n    return to_snake(value)\n"
+    },
+    {
+      "variant": "adapted",
+      "result": {
+        "status": "verified_complete",
+        "verified": true,
+        "adapted": true,
+        "max_model_calls": 3,
+        "model_calls": 3,
+        "test_runs": 2,
+        "mutations": 2,
+        "actions": [
+          {
+            "action": "replace",
+            "version": 1,
+            "old": "from stringcase import to_snake",
+            "new": "from stringcase import snake_case"
+          },
+          {
+            "action": "run_tests",
+            "result": {
+              "pass": false,
+              "exit_code": 1,
+              "timed_out": false,
+              "stdout": "",
+              "stderr": "test_already_normalized (test_app.RepairTests.test_already_normalized) ... ERROR\ntest_spaces (test_app.RepairTests.test_spaces) ... ERROR\n\n======================================================================\nERROR: test_already_normalized (test_app.RepairTests.test_already_normalized)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/tmp/flash-dep-repair-z2uxejp5/project/tests/test_app.py\", line 10, in test_already_normalized\n    self.assertEqual(normalize(\"simple\"), \"simple\")\n                     ^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/flash-dep-repair-z2uxejp5/project/app.py\", line 6, in normalize\n    return to_snake(value)\n           ^^^^^^^^\nNameError: name 'to_snake' is not defined\n\n======================================================================\nERROR: test_spaces (test_app.RepairTests.test_spaces)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/tmp/flash-dep-repair-z2uxejp5/project/tests/test_app.py\", line 7, in test_spaces\n    self.assertEqual(normalize(\"Hello World\"), \"hello_world\")\n                     ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/flash-dep-repair-z2uxejp5/project/app.py\", line 6, in normalize\n    return to_snake(value)\n           ^^^^^^^^\nNameError: name 'to_snake' is not defined\n\n----------------------------------------------------------------------\nRan 2 tests in 0.005s\n\nFAILED (errors=2)\n"
+            },
+            "after_mutation": 1,
+            "automatic_gate": true
+          },
+          {
+            "action": "replace",
+            "version": 2,
+            "old": "return to_snake(value)",
+            "new": "return snake_case(value)"
+          },
+          {
+            "action": "run_tests",
+            "result": {
+              "pass": true,
+              "exit_code": 0,
+              "timed_out": false,
+              "stdout": "",
+              "stderr": "test_already_normalized (test_app.RepairTests.test_already_normalized) ... ok\ntest_spaces (test_app.RepairTests.test_spaces) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n"
+            },
+            "after_mutation": 2,
+            "automatic_gate": true
+          }
+        ],
+        "summary": "Proposed compatibility repair complete."
+      },
+      "independent_final_test": {
+        "pass": true,
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "",
+        "stderr": "test_already_normalized (test_app.RepairTests.test_already_normalized) ... ok\ntest_spaces (test_app.RepairTests.test_spaces) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n"
+      },
+      "source_before_sha256": "eae302430d6535f462a37e3f732fd1a36de41178186d0616bfdbf4275869edb0",
+      "source_after_sha256": "ce701c5a0cffb3c5243a992bb8b7ac22545bb5be214e51eabe56d9f83f6e5e90",
+      "source_after": "\"\"\"Small project broken after upgrading synthetic stringcase to version 2.\"\"\"\nfrom stringcase import snake_case\n\n\ndef normalize(value: str) -> str:\n    return snake_case(value)\n"
+    }
+  ]
+}
