@@ -16,10 +16,10 @@ from typing import Any
 
 SYSTEM = (
     "You are repairing a small Python project against a dependency API change. "
-    "Output exactly one JSON object per turn, no fences, with action read, "
-    "replace, run_tests, or finish. read: {action,path:'app.py'}; "
-    "replace: {action,path:'app.py',old:exact_text,new:replacement_text}; "
-    "run_tests: {action:'run_tests'}; finish: {action:'finish',summary:'...'}. "
+    'Output exactly one valid JSON object per turn, no Markdown fences. '
+    'Valid actions: {"action":"read","path":"app.py"}, '
+    '{"action":"replace","path":"app.py","old":"exact old text","new":"replacement"}, '
+    '{"action":"run_tests"}, or {"action":"finish","summary":"..."}.'
     "Only app.py can be read/edited. Prefer running tests after editing. "
     "When a test fails, use the actual error as evidence to repair it. "
     "Never claim success without evidence."
@@ -189,6 +189,7 @@ class RepairAgent:
         summary = ""
         for _ in range(self.max_model_calls):
             self.calls += 1
+            proposal: dict[str, Any] = {}
             try:
                 proposal = self.model.complete(messages)
                 if not isinstance(proposal, dict):
@@ -208,7 +209,7 @@ class RepairAgent:
             if status == "budget_exhausted":
                 status = "budget_exhausted_unverified"
         return {
-            "status": status, "verified": self.adapted and self.fresh_pass(),
+            "status": status, "verified": status == "verified_complete",
             "adapted": self.adapted, "max_model_calls": self.max_model_calls,
             "model_calls": self.calls, "test_runs": self.test_runs,
             "mutations": self.mutation_version, "actions": self.actions,
