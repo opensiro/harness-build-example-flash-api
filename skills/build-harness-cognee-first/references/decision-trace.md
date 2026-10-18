@@ -26,6 +26,31 @@ Not every event needs every field: an import event records dataset facts; an arc
 
 Keep previously published receipts immutable. For corrections append a new event pointing to the superseded record; never silently overwrite or fabricate the earlier state. If a trace starts after an action, label the entry as **retrospective record**, not contemporaneous evidence.
 
+## Git-anchored checkpoints (C1–C4)
+
+Use four immutable commit SHA anchors belonging to the **new experiment repository**, not the historical Flash API case:
+
+| Checkpoint | Minimum published evidence | Must precede |
+| --- | --- | --- |
+| C1 / preflight | Task baseline and constraints, pinned source revisions, canonical admission and corpus policy, query plan | First native Cognee query |
+| C2 / discovery | Import and independent audit receipts, raw native query results (including negatives), coverage limits | Candidate comparison |
+| C3 / design | Pinned full-assessment/upstream inspection and published alternatives comparison, then a **separate** architecture-decision commit | First adaptation implementation |
+| C4 / build & evaluation | Baseline/adapted (or explicitly no-adaptation) source, tests, evaluation receipts, final limitations and hashes | Final completion report |
+
+Track both `comparison_commit` and `decision_commit` inside C3. Publish the full baseline/fixture provenance and C1/C2 commits *before* claiming causal selection. Never use an uncommitted local file's modification time as a substitute for independently accessible Git order.
+
+Confirm in Git:
+
+```bash
+git merge-base --is-ancestor "$C1_SHA" "$C2_SHA"
+git merge-base --is-ancestor "$C2_SHA" "$COMPARISON_SHA"
+git merge-base --is-ancestor "$COMPARISON_SHA" "$DECISION_SHA"
+git merge-base --is-ancestor "$DECISION_SHA" "$FIRST_ADAPTED_CODE_SHA"
+git merge-base --is-ancestor "$FIRST_ADAPTED_CODE_SHA" "$C4_SHA"
+```
+
+These tests validate commit ancestry only, **not** truthfulness of source inspection, Cognee native results, or the timing of unpublished actions. Independently examine the artifacts in those commits. Fail closed if any reference is missing/unreachable or chronology contradicts claimed causal ordering. If no remote publishing was possible, label the evidence as locally anchored, not independently published.
+
 ## Three search coverage fields
 
 Always report source_ingested_scope, lexical_or_semantic_index_scope, and inspected_source_scope separately.
