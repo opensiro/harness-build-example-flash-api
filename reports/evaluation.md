@@ -34,6 +34,7 @@ The scripted double is deliberately designed to respond to the additional test f
 - [Final command output](../receipts/evaluation/evaluation-v2-stdout.log).
 - [Original earlier five-test receipt](../receipts/evaluation/unit-tests.log) and [original scripted comparison](../receipts/evaluation/scripted-results.json) remain preserved; they were not overwritten after the later robustness changes.
 - [Checksums](../receipts/sha256-manifest.json) cover original Cognee import, audit, all native query results and evaluation files.
+- [Independent clean-clone reproduction](../receipts/evaluation/clean-clone-reproduction.json): on a second working environment, 8/8 tests PASS, scripted comparison reproduced, 17 previously published file checksums verified, and the decision-trace event order checked.
 
 ## Source and reproducibility boundary
 
