@@ -8,7 +8,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/"src"))
 sys.path.insert(0, str(ROOT/"evaluation"))
 
-from flash_repair.agent import RepairAgent, ScriptedDouble, ToolRejected, target_file, run_tests
+from flash_repair.agent import RepairAgent, ScriptedDouble, OpenAICompatibleModel, ToolRejected, target_file, run_tests
 from run_evaluation import evaluate
 
 
@@ -67,6 +67,75 @@ class RealFixtureTests(unittest.TestCase):
             self.assertEqual(r["model_calls"],3)
             self.assertFalse(r["verified"])
             self.assertEqual(r["status"],"budget_exhausted")
+
+
+    def test_budget_exhaustion_not_verified_even_after_passing_test(self):
+        class RefuseToFinish(ScriptedDouble):
+            def complete(self, messages):
+                proposal=super().complete(messages)
+                if proposal["action"]=="finish":
+                    return {"action":"read","path":"app.py"}
+                return proposal
+        with tempfile.TemporaryDirectory() as tmp:
+            workspace=pathlib.Path(tmp)/"project"
+            shutil.copytree(ROOT/"fixtures/project",workspace)
+            a=RepairAgent(workspace,ROOT/"fixtures/dependency_v2",
+                          RefuseToFinish(),adapted=True,max_model_calls=3)
+            r=a.run()
+            self.assertEqual(r["status"],"budget_exhausted")
+            self.assertFalse(r["verified"])
+            self.assertEqual(r["test_runs"],2)
+
+    def test_malformed_model_payload_does_not_crash(self):
+        class InvalidThenFinish:
+            def __init__(self):
+                self.calls=0
+            def complete(self,messages):
+                self.calls += 1
+                if self.calls==1:
+                    raise ValueError("invalid JSON")
+                return {"action":"finish","summary":"Cannot repair"}
+        with tempfile.TemporaryDirectory() as tmp:
+            workspace=pathlib.Path(tmp)/"project"
+            shutil.copytree(ROOT/"fixtures/project",workspace)
+            result=RepairAgent(workspace,ROOT/"fixtures/dependency_v2",
+                               InvalidThenFinish(),adapted=True,max_model_calls=2).run()
+            self.assertEqual(result["status"],"complete_unverified")
+            self.assertFalse(result["verified"])
+            self.assertTrue(any(x["action"]=="rejected" for x in result["actions"]))
+
+    def test_openai_compatible_chat_completions_http_shape(self):
+        import json
+        import threading
+        from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+        observations=[]
+        class Handler(BaseHTTPRequestHandler):
+            def do_POST(self):
+                size=int(self.headers["Content-Length"])
+                payload=json.loads(self.rfile.read(size))
+                observations.append((self.path,payload))
+                content=json.dumps({"action":"finish","summary":"offline HTTP fixture"})
+                body=json.dumps({"choices":[{"message":{"content":content}}]}).encode()
+                self.send_response(200)
+                self.send_header("Content-Type","application/json")
+                self.send_header("Content-Length",str(len(body)))
+                self.end_headers()
+                self.wfile.write(body)
+            def log_message(self,*args):
+                pass
+        srv=ThreadingHTTPServer(("127.0.0.1",0),Handler)
+        worker=threading.Thread(target=srv.serve_forever,daemon=True)
+        worker.start()
+        try:
+            cli=OpenAICompatibleModel(f"http://127.0.0.1:{srv.server_port}/v1","test-model")
+            reply=cli.complete([{"role":"user","content":"test"}])
+            self.assertEqual(reply["action"],"finish")
+            self.assertEqual(observations[0][0],"/v1/chat/completions")
+            self.assertEqual(observations[0][1]["model"],"test-model")
+        finally:
+            srv.shutdown()
+            srv.server_close()
+            worker.join(timeout=2)
 
 
 if __name__=="__main__":
