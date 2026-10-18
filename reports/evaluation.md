@@ -60,3 +60,9 @@ This command is an **optional reproduction example only**; no live model receipt
 6. Cognee native lexical search returned unrelated hits (including a 15-hit negative control). Selection required separate source reading and pinned upstream inspection.
 
 **Primary conclusion supported here:** the publicly preserved sequence `Problem → Cognee import/audit/native discovery → VSM and pinned upstream comparison → selected simple verification mechanism → running baseline/adapted protocol` is demonstrable and reproducible. Its **build process** is the object of this experiment, not alleged LLM uplift.
+
+## Final PR review — October 18, 2026
+
+After identifying and fixing a same-directory symlink admission bypass in `app.py` target validation, a regression test was added. An independent fresh public clone at code commit `75c3db6589e20e185441ad9cb23b26ad3ef7830f` then passed **9/9 unit tests**, reproduced the same offline scripted baseline/adapted outcomes, verified the original 18 receipt hashes with zero mismatches, and confirmed by Git ancestry that the candidate comparison preceded architecture choice and architecture choice preceded implementation. The original eight-test receipts remain immutable historical evidence, not the final suite size.
+
+Raw command output and checked code SHA: [final review validation](../receipts/evaluation/final-pr-review-validation.log). This is not an external GitHub CI pass or a live Fast/Flash model evaluation.
