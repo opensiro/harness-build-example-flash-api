@@ -43,6 +43,15 @@ class RealFixtureTests(unittest.TestCase):
             with self.assertRaises(ToolRejected):
                 target_file(pathlib.Path(tmp), "../outside.py")
 
+    def test_same_workspace_symlink_target_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            workspace = pathlib.Path(tmp)
+            (workspace / "other.py").write_text("must not edit")
+            (workspace / "app.py").symlink_to("other.py")
+            with self.assertRaises(ToolRejected):
+                target_file(workspace, "app.py")
+            self.assertEqual((workspace / "other.py").read_text(), "must not edit")
+
     def test_stale_pass_invalidated(self):
         with tempfile.TemporaryDirectory() as tmp:
             workspace=pathlib.Path(tmp)/"project"
