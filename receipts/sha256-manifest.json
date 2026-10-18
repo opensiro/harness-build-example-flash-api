@@ -1,6 +1,6 @@
 {
   "algorithm": "sha256",
-  "created_utc": "2026-10-18T18:06:25.988758+00:00",
+  "created_utc": "2026-10-18T18:26:27Z",
   "files": {
     "receipts/audit/audit-stdout.log": "0ae50602d3b0d0b6e2f22608027bc12c5b4aeb4c5fa2d0fde1a90694305984a7",
     "receipts/audit/independent-audit.json": "fe5fc9dedd293a78d9270d154b0ba5d752a49e0c2d6345388649bdbef6e74147",
@@ -11,6 +11,7 @@
     "receipts/evaluation/clean-clone-reproduction.json": "8279eaea33dbe70c8e7be67dc9d0ba28881a145d3d1d193c34ca9664bf8bd202",
     "receipts/evaluation/evaluation-stdout.log": "d8fdf33bf04bf25e4c857a6ee962690c7972ebdbe1ca9cb619251580ddd61de3",
     "receipts/evaluation/evaluation-v2-stdout.log": "d8fdf33bf04bf25e4c857a6ee962690c7972ebdbe1ca9cb619251580ddd61de3",
+    "receipts/evaluation/final-pr-review-validation.log": "18baf22bc1db19c207755aadaf1b0167fcea667492977987663b0783a69b3011",
     "receipts/evaluation/scripted-results-v2.json": "773c71c99e39ead0b728de202dbcd0e433d9b9ffb10499efa04d317eaf4220dd",
     "receipts/evaluation/scripted-results.json": "0172c0c03dbff832eed3fd59be73211a8a6b3f32033020ef46ec1bcea0d29f0e",
     "receipts/evaluation/unit-tests-v2.log": "e0b5fa80d69cea2b6cb8b8a9032845984933e1b4eacb47bce8133c0554a4aac8",
