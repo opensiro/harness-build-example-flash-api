@@ -18,8 +18,27 @@ The public assessment grades are **architectural function/ownership classificati
 
 ## Gates
 
-- **Gate 1 pending:** require fresh, actual Cognee import; independent audit of the same dataset; native discovery query receipts with negative/irrelevant hits. An Index grep is not a substitute.
-- **Gate 2 pending:** inspect only Cognee-derived candidates against canonical assessments and pinned upstream code; record source evidence and comparisons before choosing mechanisms.
-- **No harness `src/` or evaluation claims before the gates.**
+- **Gate 1 PASS (actual fresh execution):** 128 included documents; [native import](../receipts/import/native-import.json) generated 2,661 graph nodes/1,765 edges/768 VSM facts; independent [audit PASS](../receipts/audit/independent-audit.json); all seven pre-registered [native lexical queries](../receipts/discovery/native-lexical-results.json) returned 15 hits each, including irrelevant negative-control hits. An Index grep was not substituted.
+- **Gate 2 PASS (chronological evidence):** [post-Cognee shortlist](../reports/post-discovery-shortlist.md) and [published pinned upstream source comparison](../reports/candidate-comparison.md) at `751ba427c0e04170e7768cc4b9131af0b288cf4d` preceded [architecture selection](architecture-decision.md) and implementation.
+- **Build followed both gates:** harness implementation and [actual offline evaluation](../reports/evaluation.md) occurred after Stage 1 receipts, pinned upstream comparison, and separate architecture-decision commit; real model-backed evaluation remains **NOT RUN**.
 
 All results, including failures, will be added chronologically. The initial verification actions preceded the creation of the trace file and are explicitly labelled in [decision-trace.jsonl](../traces/decision-trace.jsonl); they are not misrepresented as contemporaneous logging.
+
+
+## Actual Stage 1 execution and limitations
+
+The dedicated fresh Cognee store was instantiated in CPU-VM RAM storage, with Cognee 1.6.4 and a **reused installed SDK only**, not a preexisting graph/dataset. The SDK was reused to avoid re-downloading large dependencies; the dataset, source snapshots, imported data and query receipts were newly generated. The local Index SHA, public connector branch SHA and disclosed compatibility patch were validated before import.
+
+Native import completed in 40.913 seconds with 128 documents, 2,661 typed nodes, 1,765 edges, 768 exact six-function facts and 768 section chunks. The independent audit was a separate process and read-only over the new Cognee store; its checks included source IDs, graph nodes/edges, grades, owner refs and exact source provenance.
+
+Seven `SearchType.CHUNKS_LEXICAL` queries were executed via Cognee's public native SDK. All seven returned 15 chunks. **Negative control did NOT return zero**; it matched generic vocabulary including `mechanics`. Both raw native responses and the post-result annotated hit index are retained; a local overlap count is neither Cognee's score nor performance evidence.
+
+For standalone reproduction with the pinned local checkout and connector patch applied:
+
+```bash
+python tools/stage1.py import --index /path/to/index --connector /path/to/connector/packages/connector/opensiro-vsm --store /new/empty/store
+python tools/stage1.py audit --index /path/to/index --connector /path/to/connector/packages/connector/opensiro-vsm --store /new/empty/store
+python tools/stage1.py discover --index /path/to/index --connector /path/to/connector/packages/connector/opensiro-vsm --store /new/empty/store
+```
+
+Use the project-pinned selection manifest and Cognee 1.6.4; `--store` must start absent for import and be reused **only** for the read-only audit and discovery. Do not rerun ingestion against the same dataset. The default `CHUNKS_LEXICAL` mode uses no embeddings/paid LLM; it is not a semantic proof of candidate suitability.
