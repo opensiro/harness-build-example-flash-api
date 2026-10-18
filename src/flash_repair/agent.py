@@ -82,8 +82,11 @@ class OpenAICompatibleModel:
 def target_file(workspace: Path, name: str) -> Path:
     if name != "app.py":
         raise ToolRejected("Only app.py is admitted; arbitrary paths are blocked")
-    path = (workspace / name).resolve()
-    if path.parent != workspace.resolve() or path.is_symlink():
+    base = workspace.resolve()
+    path = base / name
+    # Check the original directory entry before resolving it: resolve() hides
+    # symlinks that point to another file in the same workspace.
+    if path.is_symlink() or path.resolve() != path or path.parent != base:
         raise ToolRejected("Target must be a non-symlink file directly in workspace")
     return path
 
