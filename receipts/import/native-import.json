@@ -1,0 +1,26 @@
+{
+  "observed_at_utc": "2026-10-18T17:43:22.537762+00:00",
+  "result": {
+    "status": "PASS_FRESH_LOCAL_COGNEE_IMPORT",
+    "dataset": "opensiro-flash-python-repair-20261018-v1",
+    "index_commit": "14a2182e2d6d0ecd851cef118906431b2c851aaa",
+    "documents": 128,
+    "graph_nodes": 2661,
+    "graph_edges": 1765,
+    "source_scoped_nodes": 2661,
+    "node_type_counts": {
+      "VSMHarness": 128,
+      "VSMAssessment": 128,
+      "VSMFunction": 768,
+      "DocumentChunk": 768,
+      "TextDocument": 768,
+      "VSMEvidence": 101
+    },
+    "graded_facts": 768,
+    "all_states_exact": true,
+    "sdk_result": "PipelineRunCompleted",
+    "elapsed_s": 40.913,
+    "limitations": "Fresh-only graph_only smoke. No updates, interrupted rollback, embeddings or GPU."
+  },
+  "selection_sha256": "f9f5f0edff4da0dc9ea4696e8c9cc54f4f411e9aac5c2a2b92d3f5ba1bdb92ff"
+}

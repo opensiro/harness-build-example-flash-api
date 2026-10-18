@@ -1,0 +1,1454 @@
+{
+  "source": "receipts/discovery/native-lexical-results.json",
+  "source_sha256": "de64a3d96648754fd0c938af9a5db563bfc0b4922fe27899561e7722813f3a3a",
+  "warning": "Overlap is a simple local triage annotation, not a Cognee score or proof of architectural fit. All raw hits, including irrelevant hits, remain in the source receipt.",
+  "queries": [
+    {
+      "query_id": "D01",
+      "query": "dependency upgrade test failure compatibility repair",
+      "status": "RETURNED",
+      "native_hits": 15,
+      "literal_nonzero_overlap": 15,
+      "hits": [
+        {
+          "native_rank": 1,
+          "source_id": "opensiro/vsm-harness-index:animaworks",
+          "document_name": "animaworks.md",
+          "function_heading": "## S2 — Coordination",
+          "query_overlap_terms": [
+            "compatibility",
+            "upgrade"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "619cfe32e2838526d90e3f98d800a08c287d80088aa8f16da77a54607990f0ba",
+          "chunk_preview": "Project: AnimaWorks\nRepository: https://github.com/xuiltul/animaworks\n## S2 — Coordination\n\n- State: ?\n- Function: dampen concrete conflicting or oscillating operations between distinct working Animas through a targeted coordination relation.\n- Disturbance / variety regulated: two engineers may work on one PR/branch, race edits or duplicate reviews; these are legitimate inter-S1 risks.\n- Decisive decision or feedback right: no first-party specific *active* PR exclusive-resource admission or inde"
+        },
+        {
+          "native_rank": 2,
+          "source_id": "opensiro/vsm-harness-index:oh-my-claudecode",
+          "document_name": "oh-my-claudecode.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "dependency",
+            "failure"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "cbe03d9014daf8885aecc70cb82dfde9f9404f8d544a08aaa5b796a26e54b491",
+          "chunk_preview": "Project: oh-my-claudecode\nRepository: https://github.com/Yeachan-Heo/oh-my-claudecode\n## S1 — Operations\n\n- State: A\n- Function: perform environment-facing software-engineering work on the target repository through autonomous file/module-scoped workers that inspect, edit, test and debug assigned outcomes.\n- Disturbance / variety regulated: heterogeneous implementation/debugging/documentation/test tasks, source state, test/build failures, dependency constraints and repository feedback.\n- Decisive"
+        },
+        {
+          "native_rank": 3,
+          "source_id": "opensiro/vsm-harness-index:cocoplus",
+          "document_name": "cocoplus.md",
+          "function_heading": "## S2 — Coordination",
+          "query_overlap_terms": [
+            "dependency",
+            "failure"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "abc7b9fdeef4dbafbf46f9b9ba708231e255b191faf1da47c0289fb2b1fb05b4",
+          "chunk_preview": "Project: CocoPlus\nRepository: https://github.com/Snowflake-Labs/cocoplus\n## S2 — Coordination\n\n- State: A\n- Function: regulate dependencies and destructive concurrent interference among specialist/producer S1 units while preserving useful parallelism.\n- Disturbance / variety regulated: dependency-invalid stage starts, concurrent producers touching overlapping file scopes, incomplete work contaminating another agent's context and oscillation between parallelism levels after failures.\n- Decisive d"
+        },
+        {
+          "native_rank": 4,
+          "source_id": "opensiro/vsm-harness-index:carbon",
+          "document_name": "carbon.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "failure",
+            "repair"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "5759521cd5d0967d80fe1deb81aff0424b0e6d7500a6f59b9422917feeacd120",
+          "chunk_preview": "Project: Carbon\nRepository: https://github.com/thecarbonlayer/carbon\n## S3* — Complementary audit\n\n- State: C\n- Function: expose a first-party verification path that can challenge a model-produced candidate against execution evidence distinct from the model's ordinary completion claim.\n- Disturbance / variety regulated: an operational coding model may claim a change is complete even though candidate code fails a required assertion/test, a claimed test run is stale relative to the last mutation, "
+        },
+        {
+          "native_rank": 5,
+          "source_id": "opensiro/vsm-harness-index:cocoplus",
+          "document_name": "cocoplus.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "upgrade"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "259e992a82867fe321b1543f7b98a33264cb80c90c49aeb4f7a7d82ff80f21d2",
+          "chunk_preview": "Project: CocoPlus\nRepository: https://github.com/Snowflake-Labs/cocoplus\n## S4 — Outside-and-then intelligence\n\n- State: C\n- Function: inspect externally changed model capability after an upgrade, determine how that changes the value of existing governance/harness rules and develop evidence-backed adaptation options for future operation.\n- Disturbance / variety regulated: a newer model may make standing rules/checks newly redundant, advisory or still necessary, creating risk of stale harness con"
+        },
+        {
+          "native_rank": 6,
+          "source_id": "opensiro/vsm-harness-index:agent-orchestrator-stefan1294",
+          "document_name": "agent-orchestrator-stefan1294.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "compatibility",
+            "failure"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "c3c9430def0941a51cb04cce5c132fcc93d9a6ce46d3629870239ae10389777e",
+          "chunk_preview": "Project: Agent Orchestrator (tracks)\nRepository: https://github.com/stefan1294/agent-orchestrator\n## S4 — Outside-and-then intelligence\n\n- State: —\n- Function: no material first-party outside-and-then intelligence loop is established that senses external/prospective change, generates adaptation options and returns them into current organizational capability.\n- Disturbance / variety regulated: current framework detection, current provider/rate-limit failures, feature definitions and session histo"
+        },
+        {
+          "native_rank": 7,
+          "source_id": "opensiro/vsm-harness-index:puny",
+          "document_name": "puny.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "dependency",
+            "repair"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "eb7db404164480032bb790da6ab45b57f30a40a89beeda6cf5f11d2d57b654c1",
+          "chunk_preview": "Project: Puny\nRepository: https://github.com/christianhelle/puny\n## S1 — Operations\n\n- State: A\n- Function: perform coding work against the local project by interpreting a user task, selecting built-in repository/tool actions, changing source and observing results until the requested outcome is reached.\n- Disturbance / variety regulated: heterogeneous codebases and tasks, incomplete local context, tool/provider failures, command/test results, Git state, file contents, context-window pressure and"
+        },
+        {
+          "native_rank": 8,
+          "source_id": "opensiro/vsm-harness-index:puny",
+          "document_name": "puny.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "compatibility",
+            "repair"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "071f6b296e92d7c1d3b43d83974d1d94bf5b47622fe0d0129695b18db234e2b0",
+          "chunk_preview": "Project: Puny\nRepository: https://github.com/christianhelle/puny\n## S3* — Complementary audit\n\n- State: A\n- Function: independently audit the committed branch produced by the coding actor, determine whether it is safe/complete enough to merge, and return blocking findings into a corrective implementation/re-review loop.\n- Disturbance / variety regulated: implementation defects, regressions, compatibility/security/performance/error-handling problems, missing tests/docs, failed checks and false co"
+        },
+        {
+          "native_rank": 9,
+          "source_id": "opensiro/vsm-harness-index:bernstein",
+          "document_name": "bernstein.md",
+          "function_heading": "## S4 — Intelligence / adaptation",
+          "query_overlap_terms": [
+            "failure",
+            "upgrade"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "7dcc6af7db47fc6c6ebaae1fb745f39a8d3f93da138cc2b8163322f45b99a9a5",
+          "chunk_preview": "Project: Bernstein\nRepository: https://github.com/sipyourdrink-ltd/bernstein\n## S4 — Intelligence / adaptation\n\n- State: C\n- Function: turn future/external or trend-relevant evidence about the operating environment into concrete proposals for changing Bernstein's present routing, model, policy, role-template or provider capability.\n- Disturbance / variety regulated: cost/quality/failure trends and external repository-health regressions can make the current model routing, policy, role templates o"
+        },
+        {
+          "native_rank": 10,
+          "source_id": "opensiro/vsm-harness-index:deep-code",
+          "document_name": "deep-code.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "dependency",
+            "failure"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "eebcd934d90268aa119b173129647156e1477b8285cb672fb9042c557947a4ec",
+          "chunk_preview": "Project: deep-code\nRepository: https://github.com/liwenka1/deep-code\n## S1 — Operations\n\n- State: A\n- Function: autonomously perform coding work through iterative model/tool decisions against the live workspace.\n- Disturbance / variety regulated: unfamiliar codebase state, incomplete requirements, command/build/test failures, tool errors, model/provider failures, context growth and permission/sandbox constraints.\n- Decisive decision or feedback right: choose the next repository/tool action, revi"
+        },
+        {
+          "native_rank": 11,
+          "source_id": "opensiro/vsm-harness-index:water",
+          "document_name": "water.md",
+          "function_heading": "## S2 — Coordination",
+          "query_overlap_terms": [
+            "dependency",
+            "upgrade"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "6fada25c1245571fe2fcc8137d0ad5a4c3abaf2064f22e76c729cc9dbd4eacfe",
+          "chunk_preview": "Project: Water\nRepository: https://github.com/manthanguptaa/water\n## S2 — Coordination\n\n- State: —\n- Function: no sufficiently evidenced S2-specific attenuation of concrete interference/conflict/oscillation among distinct Water S1 units is established in the reviewed standard distribution.\n- Disturbance / variety regulated: no specific inter-S1 disturbance satisfying the Profile witness is established.\n- Decisive decision or feedback right: none established for an S2-specific attenuation relatio"
+        },
+        {
+          "native_rank": 12,
+          "source_id": "opensiro/vsm-harness-index:pooled",
+          "document_name": "pooled.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "failure",
+            "repair"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "6a1598531931ef0becb906f994d52b3eafcb24f8b987a4808a3c236a68a1f8a5",
+          "chunk_preview": "Project: Pooled\nRepository: https://github.com/Nehanth/pooled\n## S1 — Operations\n\n- State: A\n- Function: build and repair a static web application in the host's project workspace through iterative model-selected coding and preview actions.\n- Disturbance / variety regulated: heterogeneous user requests, current project files, malformed/ambiguous model tool calls, edit conflicts, runtime errors, context pressure, repeated failures and host approval decisions.\n- Decisive decision or feedback right:"
+        },
+        {
+          "native_rank": 13,
+          "source_id": "opensiro/vsm-harness-index:metaharness",
+          "document_name": "metaharness.md",
+          "function_heading": "## S4 — Intelligence / adaptation",
+          "query_overlap_terms": [
+            "failure",
+            "repair"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "163212ff4518ce1eaef118c94e7c2f96c62c7e881ab75ad00e166ac19744dbf7",
+          "chunk_preview": "Project: MetaHarness\nRepository: https://github.com/ruvnet/metaharness\n## S4 — Intelligence / adaptation\n\n- State: A\n- Function: use observed task/evaluation failures and changing performance evidence to generate bounded prospective harness adaptations and feed selected improvements into later generations of current capability.\n- Disturbance / variety regulated: current harness guidance/configuration can underperform on repository/task behaviour, repeat failure signatures, plateau or incur poor "
+        },
+        {
+          "native_rank": 14,
+          "source_id": "opensiro/vsm-harness-index:tura",
+          "document_name": "tura.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "dependency",
+            "repair"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "aed984811b6dc36b50b0ec8a2406d1ff959a566b18c99fb92d8bac427d59f318",
+          "chunk_preview": "Project: Tura\nRepository: https://github.com/Tura-AI/tura\n## S1 — Operations\n\n- State: A\n- Function: decide and execute uncertain repository engineering edits, inspections and tests using one model-led coding session and its macro command graph.\n- Disturbance / variety regulated: unknown repository state, failed shell tests, partial patches, unexpected command outputs, new context requirements.\n- Decisive decision or feedback right: coding model selects command graph/tool arguments and what furt"
+        },
+        {
+          "native_rank": 15,
+          "source_id": "opensiro/vsm-harness-index:oh-my-claudecode",
+          "document_name": "oh-my-claudecode.md",
+          "function_heading": "## S2 — Coordination",
+          "query_overlap_terms": [
+            "dependency",
+            "failure"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "a64987ed4e0300b3035c53ee4d24519c07cc987a56ecebb09f5ee9ddf667777d",
+          "chunk_preview": "Project: oh-my-claudecode\nRepository: https://github.com/Yeachan-Heo/oh-my-claudecode\n## S2 — Coordination\n\n- State: A\n- Function: attenuate destructive interference among concurrently operating workers through ownership/dependency decisions and conflict responses that return into worker behaviour.\n- Disturbance / variety regulated: duplicate task claiming, overlapping file edits, dependency races, branch/worktree collisions and merge/rebase conflicts.\n- Decisive decision or feedback right: choo"
+        }
+      ]
+    },
+    {
+      "query_id": "D02",
+      "query": "coding agent run tests inspect failure fix patch",
+      "status": "RETURNED",
+      "native_hits": 15,
+      "literal_nonzero_overlap": 15,
+      "hits": [
+        {
+          "native_rank": 1,
+          "source_id": "opensiro/vsm-harness-index:oh-my-claudecode",
+          "document_name": "oh-my-claudecode.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "failure",
+            "fix",
+            "tests"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "5f961cc4e37ffb784171c8f7135fd82a51289d3358fe3e493420cfcde7e78de2",
+          "chunk_preview": "Project: oh-my-claudecode\nRepository: https://github.com/Yeachan-Heo/oh-my-claudecode\n## S3* — Complementary audit\n\n- State: A\n- Function: independently challenge worker completion/quality claims through a separate read-only verification/review pass that gathers fresh repository evidence and returns findings into corrective control.\n- Disturbance / variety regulated: executor self-approval, stale/unsupported completion claims, acceptance-criteria gaps, regressions and risk-specific security/qual"
+        },
+        {
+          "native_rank": 2,
+          "source_id": "opensiro/vsm-harness-index:dscode",
+          "document_name": "dscode.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "inspect",
+            "patch"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "0bf7c9b516d987c1c293f5f82b5f17c627bbd63081d822b530b829213e349bb5",
+          "chunk_preview": "Project: DSCode\nRepository: https://github.com/thinkany-ai/dscode\n## S1 — Operations\n\n- State: A\n- Function: perform environment-facing software-engineering work through a model-driven coding session that selects tools, observes results and iterates.\n- Disturbance / variety regulated: heterogeneous user requests, repository/file/Git state, command/test/diagnostic output, tool failures, model observations, context pressure, permissions and implementation choices.\n- Decisive decision or feedback r"
+        },
+        {
+          "native_rank": 3,
+          "source_id": "opensiro/vsm-harness-index:scoot",
+          "document_name": "scoot.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "inspect",
+            "patch",
+            "run",
+            "tests"
+          ],
+          "overlap_count": 4,
+          "chunk_sha256": "aebf34894f4f1ea6e259cff321d7388d781cd844d09be55f4a54bc431de998b5",
+          "chunk_preview": "Project: scoot\nRepository: https://github.com/sergenes/scootcli\n## S3* — Complementary audit\n\n- State: —\n- Function: no separate complementary evidence reviewer/auditor correcting operational reports or code outputs.\n- Disturbance / variety regulated: false completion, defective patches and missed test failures.\n- Decisive decision or feedback right: the current worker decides whether to run tests or inspect diffs; a human may judge a worktree diff, but no built-in independent raw-work auditor a"
+        },
+        {
+          "native_rank": 4,
+          "source_id": "opensiro/vsm-harness-index:bernstein",
+          "document_name": "bernstein.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "failure",
+            "patch",
+            "run"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "807592aa530fb8dd790e94fd55414a70b0b10b5e83cd288c445ec8e2060d3dee",
+          "chunk_preview": "Project: Bernstein\nRepository: https://github.com/sipyourdrink-ltd/bernstein\n## S3 — Inside-and-now control\n\n- State: A\n- Function: review the live whole-run task organization and autonomously revise current commitments, roles and priorities when completions, failures or stalls indicate the current operating plan needs correction.\n- Disturbance / variety regulated: changing task completion/failure state, stalled work, unsuitable role assignment, wrong priority, obsolete commitments, newly necess"
+        },
+        {
+          "native_rank": 5,
+          "source_id": "opensiro/vsm-harness-index:metis",
+          "document_name": "metis.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "failure",
+            "inspect",
+            "run",
+            "tests"
+          ],
+          "overlap_count": 4,
+          "chunk_sha256": "ddc847e30eee67b9cb3ef7860dff92f3f7bd645bf63158201c6bac4d0a0f2fe1",
+          "chunk_preview": "Project: Metis\nRepository: https://github.com/Wholiver/metis\n## S3* — Complementary audit\n\n- State: A\n- Function: independently challenge implementation claims through author-independent review and grounded verification before the Performance frontier can converge.\n- Disturbance / variety regulated: incorrect implementation claims, scope creep, security/regression risks, missing tests and false completion despite failing real-system evidence.\n- Decisive decision or feedback right: independently "
+        },
+        {
+          "native_rank": 6,
+          "source_id": "opensiro/vsm-harness-index:aivo-code",
+          "document_name": "aivo-code.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "failure",
+            "inspect",
+            "run",
+            "tests"
+          ],
+          "overlap_count": 4,
+          "chunk_sha256": "c8368b5a47e838ee6b81a0bd0cd7973da149d988901244229794853c0cb1e44f",
+          "chunk_preview": "Project: Aivo Code\nRepository: https://github.com/yuanchuan/aivo\n## S3* — Complementary audit\n\n- State: A\n- Function: independently challenge a producing coding agent's change/completion using a separate model-backed reviewer with complementary read-only access and evidence-backed verdicts.\n- Disturbance / variety regulated: the producing agent may believe its implementation is correct or complete while the actual diff, tests, commands or edge cases reveal failure.\n- Decisive decision or feedbac"
+        },
+        {
+          "native_rank": 7,
+          "source_id": "opensiro/vsm-harness-index:muonroi-cli",
+          "document_name": "muonroi-cli.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "fix",
+            "run"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "b70ac1c66ea07d61f4f4bc4d818134dc3735083d90489617cb8b1011d401b229",
+          "chunk_preview": "Project: muonroi-cli\nRepository: https://github.com/muonroi/muonroi-cli\n## S4 — Outside-and-then intelligence\n\n- State: A\n- Function: retain operational lessons, recall them in later work, evaluate whether recalled guidance helped and write newly discovered mistake→fix lessons so subsequent agent behavior can adapt.\n- Disturbance / variety regulated: recurring mistakes, stale/noisy prior guidance, unfamiliar/risky code areas, previously learned project-specific constraints and context lost acros"
+        },
+        {
+          "native_rank": 8,
+          "source_id": "opensiro/vsm-harness-index:bernstein",
+          "document_name": "bernstein.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "fix",
+            "inspect",
+            "tests"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "1cad17d623da471355689a928940d21e60320caff3d502cf5090012cc4173979",
+          "chunk_preview": "Project: Bernstein\nRepository: https://github.com/sipyourdrink-ltd/bernstein\n## S3* — Complementary audit\n\n- State: A\n- Function: independently inspect completed operational work through a reviewer path that is distinct from the worker's ordinary production/reporting path and return a corrective judgment before merge.\n- Disturbance / variety regulated: a worker can report completion while its actual diff contains correctness, security, bug, style or scope defects that ordinary completion claims/"
+        },
+        {
+          "native_rank": 9,
+          "source_id": "opensiro/vsm-harness-index:peezy",
+          "document_name": "peezy.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "inspect",
+            "run",
+            "tests"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "cd254f4bae80ad00d9e7129c3ca2a4ce55b32fad968dd38fcb9a487dbaebc123",
+          "chunk_preview": "Project: Peezy\nRepository: https://github.com/p0systems/peezy-cli\n## S3* — Complementary audit\n\n- State: —\n- Function: no material independent complementary audit path is established.\n- Disturbance / variety regulated: no separate actor independently challenges an operational claim using a complementary evidence path.\n- Decisive decision or feedback right: none established.\n- Decision owner: none established.\n- Supporting / enforcement mechanisms: the same coding agent may run tests, inspect dif"
+        },
+        {
+          "native_rank": 10,
+          "source_id": "opensiro/vsm-harness-index:sema-coder",
+          "document_name": "sema-coder.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "inspect",
+            "tests"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "6e5c460f4d975e91920080cd57d046eb916e4b549ae042c3aafc7eaac5a35692",
+          "chunk_preview": "Project: Sema Coder\nRepository: https://github.com/sema-lisp/sema-coder\n## S3* — Complementary audit\n\n- State: —\n- Function: no material complementary and sufficiently independent runtime audit path was established.\n- Disturbance / variety regulated: not established at S3* level.\n- Decisive decision or feedback right: not established. The coding actor is instructed to verify its own work and can inspect command/test results, while repository tests/CI audit the product during development rather t"
+        },
+        {
+          "native_rank": 11,
+          "source_id": "opensiro/vsm-harness-index:termcoder",
+          "document_name": "termcoder.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "failure",
+            "run",
+            "tests"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "98fa69ce0a6ccb0b6e0b75260a161c049627e483b4d1f9b277934ff35afbc1e6",
+          "chunk_preview": "Project: Termcoder\nRepository: https://github.com/nattergabriel/termcoder\n## S1 — Operations\n\n- State: A\n- Function: carry out uncertain coding/developer tasks through chosen code-inspection, search, editing and shell operations informed by real tool feedback.\n- Disturbance / variety regulated: unknown project structure, unavailable files, code defects, command failure, unexpected results and subsequent needed steps.\n- Decisive decision or feedback right: model chooses a sequence of typed tools "
+        },
+        {
+          "native_rank": 12,
+          "source_id": "opensiro/vsm-harness-index:agent-orchestrator-stefan1294",
+          "document_name": "agent-orchestrator-stefan1294.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "failure",
+            "fix"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "4a4ca8d2249e188adc7c1f464ea334c16e303c16d5c495eb511bfabd13768e34",
+          "chunk_preview": "Project: Agent Orchestrator (tracks)\nRepository: https://github.com/stefan1294/agent-orchestrator\n## S3* — Complementary audit\n\n- State: A\n- Function: independently challenge the claim that an implemented/merged feature satisfies its acceptance steps using a separate verification session and observation-only role, then return failures into corrective execution.\n- Disturbance / variety regulated: an implementation agent can exit successfully or commit code that is behaviorally wrong, incomplete, "
+        },
+        {
+          "native_rank": 13,
+          "source_id": "opensiro/vsm-harness-index:puny",
+          "document_name": "puny.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "fix",
+            "run",
+            "tests"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "071f6b296e92d7c1d3b43d83974d1d94bf5b47622fe0d0129695b18db234e2b0",
+          "chunk_preview": "Project: Puny\nRepository: https://github.com/christianhelle/puny\n## S3* — Complementary audit\n\n- State: A\n- Function: independently audit the committed branch produced by the coding actor, determine whether it is safe/complete enough to merge, and return blocking findings into a corrective implementation/re-review loop.\n- Disturbance / variety regulated: implementation defects, regressions, compatibility/security/performance/error-handling problems, missing tests/docs, failed checks and false co"
+        },
+        {
+          "native_rank": 14,
+          "source_id": "opensiro/vsm-harness-index:ecc",
+          "document_name": "ecc.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "failure",
+            "fix"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "5ae138749fa10a85725ce2483f86728d48b7034d0eda3df6b371eb86e78047db",
+          "chunk_preview": "Project: Everything Claude Code (ECC)\nRepository: https://github.com/affaan-m/ECC\n## S3* — Complementary audit\n\n- State: A\n- Function: independently audit a candidate using complementary reviewer actors and return defects into corrective production work before shipping.\n- Disturbance / variety regulated: semantic defects, hallucinations, incompleteness, compliance violations and technical errors the producer may miss.\n- Decisive decision or feedback right: two isolated reviewers independently is"
+        },
+        {
+          "native_rank": 15,
+          "source_id": "opensiro/vsm-harness-index:termcoder",
+          "document_name": "termcoder.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "run",
+            "tests"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "9a358576949bef067fa38e83e9662ebacf2606440c16edbca767cab9a5267dee",
+          "chunk_preview": "Project: Termcoder\nRepository: https://github.com/nattergabriel/termcoder\n## S3* — Complementary audit\n\n- State: —\n- Function: no sufficiently independent reality-sampling auditor emits a separate judgment and closes a feedback path into S3 management.\n- Disturbance / variety regulated: tool/test failures can be seen by the active coding model and tests can be run as tools, but these are ordinary execution feedback rather than independent operational auditing.\n- Decisive decision or feedback rig"
+        }
+      ]
+    },
+    {
+      "query_id": "D03",
+      "query": "execute shell commands validate changes retry",
+      "status": "RETURNED",
+      "native_hits": 15,
+      "literal_nonzero_overlap": 15,
+      "hits": [
+        {
+          "native_rank": 1,
+          "source_id": "opensiro/vsm-harness-index:hankweave",
+          "document_name": "hankweave.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "commands",
+            "execute",
+            "retry"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "ae42e2fd20629529801662eee86add78ca08e7cc79fec15a8c71497268bf465c",
+          "chunk_preview": "Project: hankweave\nRepository: https://github.com/SouthBridgeAI/hankweave-runtime\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no autonomous whole-hank inside-and-now control owner is established in the standard distribution.\n- Disturbance / variety regulated: budget exhaustion, codon failure, retryable errors, shutdown/resume conditions, loop completion, checkpoint/rollback requests and runtime lifecycle are regulated, but primarily by authored policy and deterministic runtime machine"
+        },
+        {
+          "native_rank": 2,
+          "source_id": "opensiro/vsm-harness-index:superharness",
+          "document_name": "superharness.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "changes",
+            "commands",
+            "retry"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "70606aab9badf35730af9b6151ff0ead3b6b1a43ab21b4f45dd9fd025b4ea8a9",
+          "chunk_preview": "Project: superharness\nRepository: https://github.com/artificemachine/superharness\n## S3 — Inside-and-now control\n\n- State: C\n- Function: regulate the current project-wide portfolio of admitted work by maintaining a single operational view of tasks/inbox/dependencies/liveness and deterministically dispatching, retrying, recovering, failing or archiving work as conditions change.\n- Disturbance / variety regulated: blocked dependencies, stale/overdue tasks, dead launcher processes, retryable failur"
+        },
+        {
+          "native_rank": 3,
+          "source_id": "opensiro/vsm-harness-index:pydantic-ai-harness",
+          "document_name": "pydantic-ai-harness.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "changes",
+            "execute",
+            "retry"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "638271a6dac5b99ee6af89b12288d20b5bcc8c624edc5882d39a8f8a2fbc4e4b",
+          "chunk_preview": "Project: Pydantic AI Harness\nRepository: https://github.com/pydantic/pydantic-ai-harness\n## S3 — Inside-and-now control\n\n- State: A\n- Function: in DynamicWorkflow mode, regulate the current whole-team portfolio of subordinate agent calls, dependencies, retries and result-conditioned follow-up commitments.\n- Disturbance / variety regulated: changing intermediate subagent results, failed review outcomes, alternative candidate quality, fan-out resource needs and dependencies that require deciding w"
+        },
+        {
+          "native_rank": 4,
+          "source_id": "opensiro/vsm-harness-index:helpofai",
+          "document_name": "helpofai.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "changes",
+            "execute",
+            "retry"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "7dff51b5e0def74c7327876954b676be8a25ae037a91712b506cd1bb558d2737",
+          "chunk_preview": "Project: HelpOfAi\nRepository: https://github.com/helpofai/HelpOfAi-Cli\n## S3 — Inside-and-now control\n\n- State: A\n- Function: manage a current fleet run as a whole by diagnosing worker state and choosing current interventions over active commitments.\n- Disturbance / variety regulated: stale or failed workers, transient transport/provider failures, verifier disagreement, task failures, retry exhaustion, unsafe continuation and ambiguous current ownership/escalation needs.\n- Decisive decision or f"
+        },
+        {
+          "native_rank": 5,
+          "source_id": "opensiro/vsm-harness-index:ashcode",
+          "document_name": "ashcode.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "commands",
+            "execute",
+            "shell"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "f8973124ba051c10bebbafeed105c97e02179a33864b26d96139897d56ccb4c9",
+          "chunk_preview": "Project: AshCode\nRepository: https://github.com/AuthRan/AshCode\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no owned whole-system current-control supervisory loop with discretionary resource/commitment intervention at the assessed session recursion.\n- Disturbance / variety regulated: token/context pressure, unsafe edits and shell commands, hanging subagent work, repetitive actions.\n- Decisive decision or feedback right: operator selects approval policy and turn/model config; runtime g"
+        },
+        {
+          "native_rank": 6,
+          "source_id": "opensiro/vsm-harness-index:ashcode",
+          "document_name": "ashcode.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "changes",
+            "execute",
+            "shell"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "2055e77c8574c4c50247be7fce980dd3bd23b4d50ac17a48f6672509a56781b4",
+          "chunk_preview": "Project: AshCode\nRepository: https://github.com/AuthRan/AshCode\n## S1 — Operations\n\n- State: A\n- Function: autonomously carry out coding/repository investigation through iterative tool choice and environment changes/observations.\n- Disturbance / variety regulated: changing user requests, source contents, errors in tool output, shell outcomes, model output and context-window pressure.\n- Decisive decision or feedback right: the model-driven root `Agent` chooses tool names/arguments and next turns "
+        },
+        {
+          "native_rank": 7,
+          "source_id": "opensiro/vsm-harness-index:visvoai",
+          "document_name": "visvoai.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "commands",
+            "execute",
+            "shell"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "f47d2e582847ad6370ce685899989c1c0975de0979a1f621b3478e0d550264ff",
+          "chunk_preview": "Project: VisvoAI\nRepository: https://github.com/VisvoAI/visvoai\n## S1 — Operations\n\n- State: A\n- Function: execute uncertain developer coding tasks by choosing repository-inspection, shell, file-edit and verification operations in response to live observations.\n- Disturbance / variety regulated: unknown repository structure, unexpected tool output, failed commands, incomplete edits, changing task-local context, and need for further action/verification.\n- Decisive decision or feedback right: acti"
+        },
+        {
+          "native_rank": 8,
+          "source_id": "opensiro/vsm-harness-index:pydantic-ai-harness",
+          "document_name": "pydantic-ai-harness.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "changes",
+            "execute",
+            "shell"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "88f25e38fe28e175be5915f1c20d48adca7b989fa4fd99ad6a09c7aa9fe49468",
+          "chunk_preview": "Project: Pydantic AI Harness\nRepository: https://github.com/pydantic/pydantic-ai-harness\n## S1 — Operations\n\n- State: A\n- Function: autonomously execute a bounded coding/research task using first-party Harness tools, workspace/context capabilities and model-driven action selection.\n- Disturbance / variety regulated: repository/web/task ambiguity, file and shell state, tool results, test failures, retrieved evidence, long-horizon context pressure and intermediate errors encountered while completi"
+        },
+        {
+          "native_rank": 9,
+          "source_id": "opensiro/vsm-harness-index:nemocode",
+          "document_name": "nemocode.md",
+          "function_heading": "## S4 — Intelligence / adaptation",
+          "query_overlap_terms": [
+            "commands",
+            "retry"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "645fe6e96cc9f5bf5f2fe55ab55b878314b17fc66df68b1b70615efef242a765",
+          "chunk_preview": "Project: NemoCode\nRepository: https://github.com/SampleBias/nemocode\n## S4 — Intelligence / adaptation\n\n- State: —\n- Function: no material first-party prospective environment-intelligence and organizational adaptation loop was established.\n- Disturbance / variety regulated: retrieval, Python project detection, session persistence, context compaction, runtime/model installation/update commands and retry behavior help current execution or maintenance but do not convert future/environmental intelli"
+        },
+        {
+          "native_rank": 10,
+          "source_id": "opensiro/vsm-harness-index:oh-my-claudecode",
+          "document_name": "oh-my-claudecode.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "changes",
+            "execute",
+            "retry"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "f415892dacabda2d0335251e1e71c958c8291a2fcb83d5d2cfe347c42cef227c",
+          "chunk_preview": "Project: oh-my-claudecode\nRepository: https://github.com/Yeachan-Heo/oh-my-claudecode\n## S3 — Inside-and-now control\n\n- State: A\n- Function: maintain current whole-team cohesion by observing the live worker/task set and intervening in current commitments/capacity when workers fail, stall, die or leave dependencies blocked.\n- Disturbance / variety regulated: uneven/idle load, stuck tasks, worker death, repeated failures, blocked dependencies, failed tasks and incomplete commitments.\n- Decisive de"
+        },
+        {
+          "native_rank": 11,
+          "source_id": "opensiro/vsm-harness-index:hankweave",
+          "document_name": "hankweave.md",
+          "function_heading": "## S5 — Policy and identity",
+          "query_overlap_terms": [
+            "commands",
+            "retry"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "cea73160f262eeadbd1682e51cc1cc175fbe84bb3979766a6097e90c5dd305b0",
+          "chunk_preview": "Project: hankweave\nRepository: https://github.com/SouthBridgeAI/hankweave-runtime\n## S5 — Policy and identity\n\n- State: —\n- Function: no identity/ultimate-policy closure is established for the running hank.\n- Disturbance / variety regulated: hank prompts, runtime config, model choice, budgets, retry/failure policies and operator commands constrain execution but do not constitute an evidenced identity-level policy dispute.\n- Decisive decision or feedback right: not established as S5.\n- Decision o"
+        },
+        {
+          "native_rank": 12,
+          "source_id": "opensiro/vsm-harness-index:grok-build",
+          "document_name": "grok-build.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "execute",
+            "shell"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "4730a50df7d47258ba989516acd9eb58a5fb6a6b6e4e69f2154a987feab4f0ba",
+          "chunk_preview": "Project: Grok Build\nRepository: https://github.com/xai-org/grok-build\n## S1 — Operations\n\n- State: A\n- Function: Model-guided terminal coding actions against a real file/shell/VCS workspace, with live tool-result feedback and continued model turns.\n- Disturbance / variety regulated: User requirements, changing code/build/test state, tool errors and provider response variability.\n- Decisive decision or feedback right: Choose and execute task-specific files, shell and code actions and adapt to too"
+        },
+        {
+          "native_rank": 13,
+          "source_id": "opensiro/vsm-harness-index:moss-agent",
+          "document_name": "moss-agent.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "changes",
+            "commands",
+            "retry"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "5b2661afc8152bfeee3b5f702b40ab88ad1e49a3dd753624e09cb4ca8c30fd86",
+          "chunk_preview": "Project: moss-agent\nRepository: https://github.com/peterxiemin/moss-agent\n## S4 — Outside-and-then intelligence\n\n- State: —\n- Function: no native prospective external environment intelligence with strategy/capability adaptation alternatives and return into present organizational control.\n- Disturbance / variety regulated: model endpoint changes, token limits, new user files and interruptions affect current performance but do not trigger an autonomous future environmental sensing process.\n- Decis"
+        },
+        {
+          "native_rank": 14,
+          "source_id": "opensiro/vsm-harness-index:bbarit-oss",
+          "document_name": "bbarit-oss.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "commands",
+            "execute",
+            "shell"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "b3deabb838b16d31567f1c07d7b1fbc6906ddcb4bc0e600157adcc922ce93704",
+          "chunk_preview": "Project: bbarit-oss\nRepository: https://github.com/bbarit/bbarit-agent-oss\n## S1 — Operations\n\n- State: A\n- Function: Code edit, read, search, shell execution and feedback on current task state.\n- Disturbance / variety regulated: Unexpected source code, command failures, generated edits and user needs.\n- Decisive decision or feedback right: Select subsequent tool calls and respond to observed tool outcomes.\n- Decision owner: Rust run_agent_loop driven by the selected coding model.\n- Supporting /"
+        },
+        {
+          "native_rank": 15,
+          "source_id": "opensiro/vsm-harness-index:deep-code",
+          "document_name": "deep-code.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "changes",
+            "retry",
+            "shell"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "eebcd934d90268aa119b173129647156e1477b8285cb672fb9042c557947a4ec",
+          "chunk_preview": "Project: deep-code\nRepository: https://github.com/liwenka1/deep-code\n## S1 — Operations\n\n- State: A\n- Function: autonomously perform coding work through iterative model/tool decisions against the live workspace.\n- Disturbance / variety regulated: unfamiliar codebase state, incomplete requirements, command/build/test failures, tool errors, model/provider failures, context growth and permission/sandbox constraints.\n- Decisive decision or feedback right: choose the next repository/tool action, revi"
+        }
+      ]
+    },
+    {
+      "query_id": "D04",
+      "query": "python environment package installation recovery",
+      "status": "RETURNED",
+      "native_hits": 15,
+      "literal_nonzero_overlap": 15,
+      "hits": [
+        {
+          "native_rank": 1,
+          "source_id": "opensiro/vsm-harness-index:openharness",
+          "document_name": "openharness.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "installation",
+            "package"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "c487eb446ac897bec919dd527f741ad2310b2fb7ecd1adc326ce88f8a9923742",
+          "chunk_preview": "Project: OpenHarness\nRepository: https://github.com/autonomous-ai/openharness\n## S4 — Outside-and-then intelligence\n\n- State: C(P)\n- Function: adapt the installation's future operational repertoire to changes/opportunities in the available domain-harness ecosystem by discovering and adopting new or updated DSH capabilities.\n- Disturbance / variety regulated: future work may require a domain/toolchain the installation does not currently have, while community/built-in packages and package versions"
+        },
+        {
+          "native_rank": 2,
+          "source_id": "opensiro/vsm-harness-index:nemocode",
+          "document_name": "nemocode.md",
+          "function_heading": "## S4 — Intelligence / adaptation",
+          "query_overlap_terms": [
+            "environment",
+            "installation",
+            "recovery"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "645fe6e96cc9f5bf5f2fe55ab55b878314b17fc66df68b1b70615efef242a765",
+          "chunk_preview": "Project: NemoCode\nRepository: https://github.com/SampleBias/nemocode\n## S4 — Intelligence / adaptation\n\n- State: —\n- Function: no material first-party prospective environment-intelligence and organizational adaptation loop was established.\n- Disturbance / variety regulated: retrieval, Python project detection, session persistence, context compaction, runtime/model installation/update commands and retry behavior help current execution or maintenance but do not convert future/environmental intelli"
+        },
+        {
+          "native_rank": 3,
+          "source_id": "opensiro/vsm-harness-index:openharness",
+          "document_name": "openharness.md",
+          "function_heading": "## S5 — Policy and identity",
+          "query_overlap_terms": [
+            "environment",
+            "installation",
+            "package"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "2246a8129fc140038a23c9dd2bd41dd1dd3b78e9c66054254e8b619f728f913b",
+          "chunk_preview": "Project: OpenHarness\nRepository: https://github.com/autonomous-ai/openharness\n## S5 — Policy and identity\n\n- State: —\n- Function: no installation-level identity/ultimate-policy closure path is established from the reviewed standard distribution.\n- Disturbance / variety regulated: OpenHarness contains account/device trust, engine selection, permission-bypass flags, package manifests/instructions and security constraints, but these are access/configuration/operational policy surfaces rather than a"
+        },
+        {
+          "native_rank": 4,
+          "source_id": "opensiro/vsm-harness-index:travis234",
+          "document_name": "travis234.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "environment",
+            "installation",
+            "package"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "78cfe15597296445636ed8ad6810eb7287b0bfc796f8c6e3c6593acade60ea3a",
+          "chunk_preview": "Project: Travis234\nRepository: https://github.com/taikkyithar/travis234\n## S4 — Outside-and-then intelligence\n\n- State: —\n- Function: No autonomous external-and-prospective intelligence function with a decision path changing sustained organizational capability is established.\n- Disturbance / variety regulated: Provider/model availability, extension ecosystem, user requests and context limitations can change; native provider model selection and extension loading operate present capabilities.\n- De"
+        },
+        {
+          "native_rank": 5,
+          "source_id": "opensiro/vsm-harness-index:openharness",
+          "document_name": "openharness.md",
+          "function_heading": "## S2 — Coordination",
+          "query_overlap_terms": [
+            "installation",
+            "package"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "cfd839c6daae68f87825f0a9b8dfb87aaf0e174fcb9bee544b7e29256f7fe2a9",
+          "chunk_preview": "Project: OpenHarness\nRepository: https://github.com/autonomous-ai/openharness\n## S2 — Coordination\n\n- State: —\n- Function: no installation-level S2 function is established from the reviewed evidence.\n- Disturbance / variety regulated: the installation can host many concurrent sessions, but the reviewed top-level surfaces do not identify a specific inter-session interference/conflict/oscillation together with a first-party coordination relation that attenuates it.\n- Decisive decision or feedback "
+        },
+        {
+          "native_rank": 6,
+          "source_id": "opensiro/vsm-harness-index:openharness",
+          "document_name": "openharness.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "installation",
+            "package"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "5be410f9e67ade67efdb2417d50ae7a7982a7a51869b094aa322dd7367dba24c",
+          "chunk_preview": "Project: OpenHarness\nRepository: https://github.com/autonomous-ai/openharness\n## S3* — Complementary audit\n\n- State: —\n- Function: no installation-level complementary audit path is established from the reviewed standard distribution.\n- Disturbance / variety regulated: OpenHarness exposes transcripts, verdict findings, checks and development acceptance evidence, but the installation-level runtime does not provide a materially independent auditor that challenges ordinary S1 completion/reality clai"
+        },
+        {
+          "native_rank": 7,
+          "source_id": "opensiro/vsm-harness-index:google-adk",
+          "document_name": "google-adk.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "environment"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "73600d10d6959ef53569e6817a095bc11d9fec06bd6bb78f294d4c0a0c9b39fe",
+          "chunk_preview": "Project: Google ADK\nRepository: https://github.com/google/adk-python\n## S4 — Outside-and-then intelligence\n`—`: workflow iteration and task planning concern present execution rather than prospective environment intelligence that changes organizational capability/strategy."
+        },
+        {
+          "native_rank": 8,
+          "source_id": "opensiro/vsm-harness-index:nemocode",
+          "document_name": "nemocode.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "environment"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "5fcf62fcc23c8e215100cd8b0a02622c7b6f85976b6c94bbc379e917274997a1",
+          "chunk_preview": "Project: NemoCode\nRepository: https://github.com/SampleBias/nemocode\n## S1 — Operations\n\n- State: A\n- Function: perform environment-facing repository software-engineering work by interpreting a user task, inspecting code/state, selecting allowed coding actions, editing/running/checking the workspace, observing outcomes and revising subsequent actions.\n- Disturbance / variety regulated: heterogeneous repository contents, Python/non-Python project structure, ambiguous implementation choices, file "
+        },
+        {
+          "native_rank": 9,
+          "source_id": "opensiro/vsm-harness-index:preloop",
+          "document_name": "preloop.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "installation",
+            "recovery"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "db593a312668052af8911ff3863a15c9138c37902aacde73c2b8a9a009fd8cf8",
+          "chunk_preview": "Project: Preloop\nRepository: https://github.com/preloop/preloop\n## S3 — Inside-and-now control\n\n- State: C(P)\n- Function: regulate current account-wide agent activity, access and resource commitments using live agent/session/flow/spend/policy state and intervention controls.\n- Disturbance / variety regulated: active sessions and executions can consume excessive budget, take a wrong operational direction, continue under unsafe tool/model access, or require an immediate account-wide or targeted st"
+        },
+        {
+          "native_rank": 10,
+          "source_id": "opensiro/vsm-harness-index:bumblehive",
+          "document_name": "bumblehive.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "environment",
+            "recovery"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "f8c07a17c04131a68eb95c2d661f77ba254d58182e7a5cb4a3dd6b6f6cc1a9ff",
+          "chunk_preview": "Project: BumbleHive\nRepository: https://github.com/wxhcore/bumblehive\n## S1 — Operations\n\n- State: A\n- Function: execute user/application objectives through a model-driven loop that selects tools and arguments, observes environment/tool results and continues until a substantive final response is chosen.\n- Disturbance / variety regulated: ambiguous requests, changing model/tool observations, filesystem/API/MCP results, tool failures, changing conversation context and tasks requiring multiple envi"
+        },
+        {
+          "native_rank": 11,
+          "source_id": "opensiro/vsm-harness-index:openharness",
+          "document_name": "openharness.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "installation",
+            "recovery"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "e92f4b87db2837534ff15e35f097e585e5ce972d66cbd8314afacab3cff8d8e7",
+          "chunk_preview": "Project: OpenHarness\nRepository: https://github.com/autonomous-ai/openharness\n## S3 — Inside-and-now control\n\n- State: C(P)\n- Function: provide an installation-wide current-control surface over active agent sessions so current session commitments/processes can be inspected and intervened in across machines.\n- Disturbance / variety regulated: agents can be running, idle, waiting for questions, attached to the wrong target, stale after process/tmux loss, or in need of restart/retarget/cancel/stop "
+        },
+        {
+          "native_rank": 12,
+          "source_id": "opensiro/vsm-harness-index:bumblehive",
+          "document_name": "bumblehive.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "environment",
+            "package",
+            "recovery"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "7f46b120eed9214ec1b271e97488769e240994f5e3e4d52379fcd73da3e6a91c",
+          "chunk_preview": "Project: BumbleHive\nRepository: https://github.com/wxhcore/bumblehive\n## S4 — Outside-and-then intelligence\n\n- State: —\n- Function: no material first-party external-and-prospective capability-adaptation loop is established.\n- Disturbance / variety regulated: not established as future-oriented organizational adaptation.\n- Decisive decision or feedback right: not established.\n- Decision owner: none established.\n- Supporting / enforcement mechanisms: persisted conversation history, dynamic runtime "
+        },
+        {
+          "native_rank": 13,
+          "source_id": "opensiro/vsm-harness-index:deepseek-harness",
+          "document_name": "deepseek-harness.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "environment",
+            "installation"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "ca86b9054dd03193bb29e43864f9a0099396885534d08f981fe043f2f226f86e",
+          "chunk_preview": "Project: DeepSeek Harness\nRepository: https://github.com/deepseek-ai/deepseek-harness\n## S4 — Outside-and-then intelligence\n\n- State: `—`.\n- Web search, goals, workflows, Ralph rounds, Session history and plugin composition can change a current task trajectory. None establishes a distinct first-party function that monitors the external future environment, develops organizational adaptation options and closes them into changed future capability.\n- Plugin installation/update is operator/deployment"
+        },
+        {
+          "native_rank": 14,
+          "source_id": "opensiro/vsm-harness-index:hypha",
+          "document_name": "hypha.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "environment",
+            "installation",
+            "recovery"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "6ea57e1e51c51b35d5bf788fce6b8fb36e37ee14e0a662154f93058665678c6d",
+          "chunk_preview": "Project: Hypha\nRepository: https://github.com/CodeSoul-co/Hypha\n## S4 — Outside-and-then intelligence\n\n- State: —\n- Function: no material first-party external-and-prospective organizational adaptation loop is established at the assessed deployment recursion.\n- Disturbance / variety regulated: not established as changing external/future conditions requiring adaptation of organizational capability.\n- Decisive decision or feedback right: not established.\n- Decision owner: none established for S4 at"
+        },
+        {
+          "native_rank": 15,
+          "source_id": "opensiro/vsm-harness-index:blackbox",
+          "document_name": "blackbox.md",
+          "function_heading": "## S4 — Intelligence / adaptation",
+          "query_overlap_terms": [
+            "environment",
+            "package"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "29b5186c7abf9c9df4bf8edad3e40fc047863f61d3b4df9b5ef774c9dc97bad2",
+          "chunk_preview": "Project: Blackbox\nRepository: https://github.com/tyxter-dev/blackbox\n## S4 — Intelligence / adaptation\n\n- State: —\n- Function: no qualifying first-party prospective adaptation/intelligence function is established.\n- Disturbance / variety regulated: no environment-facing future-capability disturbance is shown to drive a first-party adaptation decision.\n- Decisive decision or feedback right: no first-party actor is shown selecting durable capability changes from evidence for later runs.\n- Decision"
+        }
+      ]
+    },
+    {
+      "query_id": "D05",
+      "query": "bounded iterations timeout tool execution retries",
+      "status": "RETURNED",
+      "native_hits": 15,
+      "literal_nonzero_overlap": 15,
+      "hits": [
+        {
+          "native_rank": 1,
+          "source_id": "opensiro/vsm-harness-index:ahe",
+          "document_name": "ahe.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "bounded",
+            "execution",
+            "iterations",
+            "timeout"
+          ],
+          "overlap_count": 4,
+          "chunk_sha256": "5d495d042acdcaec5872de088cc47e5aabde5c130c053ade4157f2c43631d1de",
+          "chunk_preview": "Project: Agentic Harness Engineering\nRepository: https://github.com/china-qijizhifeng/agentic-harness-engineering\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no material first-party whole-system current-control loop was established that observes live operational commitments/resources/priorities and makes bounded present-time interventions across the selected organization.\n- Disturbance / variety regulated: the orchestrator observes evaluation status, scores, timeouts and historical re"
+        },
+        {
+          "native_rank": 2,
+          "source_id": "opensiro/vsm-harness-index:go-agent",
+          "document_name": "go-agent.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "execution",
+            "retries",
+            "timeout",
+            "tool"
+          ],
+          "overlap_count": 4,
+          "chunk_sha256": "94f04e2b32251cb668c597bf6026038a58e2db8f5dc646486d2984aa49312646",
+          "chunk_preview": "Project: go-agent\nRepository: https://github.com/Protocol-Lattice/go-agent\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no material first-party whole-system current-management function is established at the declared runtime boundary.\n- Disturbance / variety regulated: not established at whole-system scope.\n- Decisive decision or feedback right: not established.\n- Decision owner: none established.\n- Supporting / enforcement mechanisms: deterministic graph queues/checkpoints, model middl"
+        },
+        {
+          "native_rank": 3,
+          "source_id": "opensiro/vsm-harness-index:zhi",
+          "document_name": "zhi.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "bounded",
+            "retries",
+            "timeout"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "fbcb0f98024a063bb530d509cb78deb4c120e820bff26f15a19afe9f571d0d82",
+          "chunk_preview": "Project: Zhi\nRepository: https://github.com/mikemikimike/zhi\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no distinct whole-system current-control function over a portfolio of operational S1 commitments/resources was established.\n- Disturbance / variety regulated: loop phase, retry budget, breaker state, token/step limits and commit-readiness are regulated, but all remain controls over one focal operation.\n- Decisive decision or feedback right: not established at S3 level.\n- Decision o"
+        },
+        {
+          "native_rank": 4,
+          "source_id": "opensiro/vsm-harness-index:skyvern",
+          "document_name": "skyvern.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "execution",
+            "retries",
+            "timeout",
+            "tool"
+          ],
+          "overlap_count": 4,
+          "chunk_sha256": "55ad5aeff71096fbbaec234ed5cb0542ef33c582a14c7555faa9b9b8143d573f",
+          "chunk_preview": "Project: Skyvern\nRepository: https://github.com/Skyvern-AI/skyvern\n## S1 — Operations\n- State: A\n- Function: Model-driven execution of browser tasks against changing web pages, with repeated perception, action selection, tool/browser effects and feedback.\n- Disturbance / variety regulated: Unfamiliar websites, forms, page navigation, site errors, interaction state and model/tool failures.\n- Decisive decision or feedback right: Choose context-specific browser actions and whether to continue an in"
+        },
+        {
+          "native_rank": 5,
+          "source_id": "opensiro/vsm-harness-index:bitrouter",
+          "document_name": "bitrouter.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "bounded",
+            "execution",
+            "timeout",
+            "tool"
+          ],
+          "overlap_count": 4,
+          "chunk_sha256": "ab093887e55d1406ed7e861349c5a1a38f41187e396a2297224b93630b18b3aa",
+          "chunk_preview": "Project: BitRouter\nRepository: https://github.com/bitrouter/bitrouter\n## S1 — Operations\n\n- State: A\n- Function: perform bounded coding/task work in a target workspace through autonomous ACP coding-agent sessions launched and routed by BitRouter.\n- Disturbance / variety regulated: user task uncertainty, repository/worktree state, model/tool outcomes, permissions/questions, provider/model availability, route policy, session continuation and failure/timeout conditions.\n- Decisive decision or feedb"
+        },
+        {
+          "native_rank": 6,
+          "source_id": "opensiro/vsm-harness-index:ashcode",
+          "document_name": "ashcode.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "bounded",
+            "timeout",
+            "tool"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "f8973124ba051c10bebbafeed105c97e02179a33864b26d96139897d56ccb4c9",
+          "chunk_preview": "Project: AshCode\nRepository: https://github.com/AuthRan/AshCode\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no owned whole-system current-control supervisory loop with discretionary resource/commitment intervention at the assessed session recursion.\n- Disturbance / variety regulated: token/context pressure, unsafe edits and shell commands, hanging subagent work, repetitive actions.\n- Decisive decision or feedback right: operator selects approval policy and turn/model config; runtime g"
+        },
+        {
+          "native_rank": 7,
+          "source_id": "opensiro/vsm-harness-index:deep-code",
+          "document_name": "deep-code.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "bounded",
+            "timeout",
+            "tool"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "63cfba3c8b5b53b098569fdd79e85a9df9deaed118f0844d234d3d60a9903a8e",
+          "chunk_preview": "Project: deep-code\nRepository: https://github.com/liwenka1/deep-code\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no distinct whole-system current-control function over a standing portfolio of operations is established.\n- Disturbance / variety regulated: the parent can choose child tasks and observe returned reports, while runtime limits track child status and timeout/cancellation.\n- Decisive decision or feedback right: no separate authority has a whole-system current view plus substan"
+        },
+        {
+          "native_rank": 8,
+          "source_id": "opensiro/vsm-harness-index:fractale",
+          "document_name": "fractale.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "bounded",
+            "execution",
+            "retries",
+            "tool"
+          ],
+          "overlap_count": 4,
+          "chunk_sha256": "f88de4ced4337b70d538ff4270a7fd1f9e8095dd6d0b2958a87f81340528ca53",
+          "chunk_preview": "Project: fractale\nRepository: https://github.com/converged-computing/fractale\n## S3* — Complementary audit\n\n- State: —\n- Function: No materially independent complementary challenge loop with actionable corrective return was established.\n- Disturbance / variety regulated: Tool-call errors and generated plan validity, evaluated inside ordinary execution.\n- Decisive decision or feedback right: The execution pathway invokes model-based success/failure classification and validates generated step spec"
+        },
+        {
+          "native_rank": 9,
+          "source_id": "opensiro/vsm-harness-index:covalo",
+          "document_name": "covalo.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "bounded",
+            "iterations",
+            "tool"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "2790bc6118732d1fc69e058b7952bc49a5e462c815684ffba8402b85828e706f",
+          "chunk_preview": "Project: Covalo\nRepository: https://github.com/bzcsk2/covalo\n## S4 — Outside-and-then intelligence\n\n- State: —\n- Function: Generate and implement adaptation to prospective external environment and future Covalo capabilities.\n- Disturbance / variety regulated: Changing source files, user-defined tasks, model/tool outcomes and current authority.\n- Decisive decision or feedback right: Choose a function-specific next decision from current evidence.\n- Decision owner: No separate first-party decision "
+        },
+        {
+          "native_rank": 10,
+          "source_id": "opensiro/vsm-harness-index:cowagent",
+          "document_name": "cowagent.md",
+          "function_heading": "## S2 — Coordination",
+          "query_overlap_terms": [
+            "execution",
+            "timeout",
+            "tool"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "30e5548c2db4ba3f8be13446bdb6a849c99cafc4a163e51cfe2479d208c9c3d0",
+          "chunk_preview": "Project: CowAgent\nRepository: https://github.com/zhayujie/CowAgent\n## S2 — Coordination\n\n- State: C\n- Function: attenuate a concrete interference between sibling operational Agents when concurrent delegations target the same persistent relay conversation.\n- Disturbance / variety regulated: concurrent handoffs to one source→target relay session would otherwise interleave turns in the target Agent's transcript and corrupt the shared conversational state used by later delegated work.\n- Decisive dec"
+        },
+        {
+          "native_rank": 11,
+          "source_id": "opensiro/vsm-harness-index:metaharness",
+          "document_name": "metaharness.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "bounded",
+            "execution",
+            "timeout",
+            "tool"
+          ],
+          "overlap_count": 4,
+          "chunk_sha256": "b52079c380c485f1607827ab460006a6f762d68a1b152466268159a23f0ba6aa",
+          "chunk_preview": "Project: MetaHarness\nRepository: https://github.com/ruvnet/metaharness\n## S1 — Operations\n\n- State: A\n- Function: execute a candidate harness as an agentic work unit and/or produce a concrete harness-engineering change through a first-party model/context/action loop, returning observable task or repository outcomes to the evolution organization.\n- Disturbance / variety regulated: changing task prompts, candidate policy guidance, repository/harness state, model responses, failed traces, test/tool"
+        },
+        {
+          "native_rank": 12,
+          "source_id": "opensiro/vsm-harness-index:autoagents",
+          "document_name": "autoagents.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "bounded",
+            "execution",
+            "iterations"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "36ee15cb9f8714edce576fd5b479e9753fbf12f8ebadc9aea9913248c9dac810",
+          "chunk_preview": "Project: AutoAgents\nRepository: https://github.com/OWD-AI/AutoAgents\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no first-party whole-system current-control loop is established after the generated organization enters operation.\n- Disturbance / variety regulated: Manager handles task design variety before Group execution, but no actor is shown regulating changing whole-organization current commitments/resources/priorities while operations proceed.\n- Decisive decision or feedback right:"
+        },
+        {
+          "native_rank": 13,
+          "source_id": "opensiro/vsm-harness-index:soloncode",
+          "document_name": "soloncode.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "execution",
+            "retries",
+            "tool"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "5ccb09b92b10870ae02d2e82fe6cc97278975f67b5717d4011991016a318a5d8",
+          "chunk_preview": "Project: SolonCode\nRepository: https://github.com/opensolon/soloncode\n## S1 — Operations\n\n- State: A\n- Function: perform environment-facing software-engineering work in the selected workspace by interpreting the objective, selecting coding/tool actions, applying them, observing results and iterating until completion or blockage.\n- Disturbance / variety regulated: heterogeneous user objectives, repository structure and instructions, file/Git state, command/test/LSP/tool outputs, tool failures, pr"
+        },
+        {
+          "native_rank": 14,
+          "source_id": "opensiro/vsm-harness-index:botpress",
+          "document_name": "botpress.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [
+            "execution",
+            "retries"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "26e81cc5ff3a229d5d57406952c3103b1623c69e546dfc22578976359fb9402d",
+          "chunk_preview": "Project: Botpress\nRepository: https://github.com/botpress/botpress\n## S4 — Outside-and-then intelligence\n`—`: reflection, retries and snapshot/resume adapt current execution but do not establish a distinct external/future-oriented intelligence loop coupled to S3. Confidence: high."
+        },
+        {
+          "native_rank": 15,
+          "source_id": "opensiro/vsm-harness-index:fleetq",
+          "document_name": "fleetq.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "bounded",
+            "iterations"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "c7fb0dba7bee59752386c16d8b1680a3d3111c987e4379ada5235dcb1d020938",
+          "chunk_preview": "Project: FleetQ\nRepository: https://github.com/escapeboy/agent-fleet-o\n## S3 — Inside-and-now control\n\n- State: A\n- Function: select and regulate live crew-wide work commitments and task ownership.\n- Disturbance / variety regulated: completed/failed/pending tasks, available specialists, bounded budget and need for replanning.\n- Decisive decision or feedback right: model coordinator chooses `delegate/complete`, assigned worker, next bounded task and, for experiment-linked crews, spawning subordin"
+        }
+      ]
+    },
+    {
+      "query_id": "D06",
+      "query": "unit test feedback diagnostics coding decisions",
+      "status": "RETURNED",
+      "native_hits": 15,
+      "literal_nonzero_overlap": 15,
+      "hits": [
+        {
+          "native_rank": 1,
+          "source_id": "opensiro/vsm-harness-index:pasclaude",
+          "document_name": "pasclaude.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "1c51143905e8e75fcaa9d7b11ef36d18488bc73721d2b10127f04602f8598357",
+          "chunk_preview": "Project: PasClaude\nRepository: https://github.com/seanrobertwright/PasClaude\n## S3* — Complementary audit\n\n- State: —\n- Function: no material complementary and sufficiently independent audit path with corrective return into ordinary PasClaude operation was established.\n- Disturbance / variety regulated: not established at S3* level.\n- Decisive decision or feedback right: not established. /review sends a local diff to the same model-backed coding actor; tests/diagnostics and GitHub mention execut"
+        },
+        {
+          "native_rank": 2,
+          "source_id": "opensiro/vsm-harness-index:nemocode",
+          "document_name": "nemocode.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "5fcf62fcc23c8e215100cd8b0a02622c7b6f85976b6c94bbc379e917274997a1",
+          "chunk_preview": "Project: NemoCode\nRepository: https://github.com/SampleBias/nemocode\n## S1 — Operations\n\n- State: A\n- Function: perform environment-facing repository software-engineering work by interpreting a user task, inspecting code/state, selecting allowed coding actions, editing/running/checking the workspace, observing outcomes and revising subsequent actions.\n- Disturbance / variety regulated: heterogeneous repository contents, Python/non-Python project structure, ambiguous implementation choices, file "
+        },
+        {
+          "native_rank": 3,
+          "source_id": "opensiro/vsm-harness-index:nemocode",
+          "document_name": "nemocode.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "f5082d32fb1afba0274b9446d4b3f1a03671ac3fe07849288889dfd18374ffa2",
+          "chunk_preview": "Project: NemoCode\nRepository: https://github.com/SampleBias/nemocode\n## S3* — Complementary audit\n\n- State: —\n- Function: no material complementary audit role with sufficiently independent access, judgment and corrective return into the supported runtime was established.\n- Disturbance / variety regulated: NemoCode can run diagnostics/tests and record verification evidence, but those checks are selected and interpreted inside the implementing S1's own loop.\n- Decisive decision or feedback right: "
+        },
+        {
+          "native_rank": 4,
+          "source_id": "opensiro/vsm-harness-index:dscode",
+          "document_name": "dscode.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "0bf7c9b516d987c1c293f5f82b5f17c627bbd63081d822b530b829213e349bb5",
+          "chunk_preview": "Project: DSCode\nRepository: https://github.com/thinkany-ai/dscode\n## S1 — Operations\n\n- State: A\n- Function: perform environment-facing software-engineering work through a model-driven coding session that selects tools, observes results and iterates.\n- Disturbance / variety regulated: heterogeneous user requests, repository/file/Git state, command/test/diagnostic output, tool failures, model observations, context pressure, permissions and implementation choices.\n- Decisive decision or feedback r"
+        },
+        {
+          "native_rank": 5,
+          "source_id": "opensiro/vsm-harness-index:lean-coder",
+          "document_name": "lean-coder.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "f465112abf3c28f87ef0ca9cd9f6e09614b7b2a884f6409f8e9b862af7ccba6b",
+          "chunk_preview": "Project: lean-coder\nRepository: https://github.com/codemonkeying/lean-coder\n## S3* — Complementary audit\n\n- State: —\n- Function: No integrated complementary reality-sampling audit authority returning findings to whole-current management is demonstrated.\n- Disturbance / variety regulated: Wrong code or incomplete worker reports can be checked by routine tests, code review user requests or a delegated reviewer, but none is first-party required independent operational audit wiring.\n- Decisive decis"
+        },
+        {
+          "native_rank": 6,
+          "source_id": "opensiro/vsm-harness-index:agent-squad",
+          "document_name": "agent-squad.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "bbbc97d9d5f1e5fcd1b3dcf434b5f6c0a94f98919f905c0758f2ec385a227e11",
+          "chunk_preview": "Project: Agent Squad\nRepository: https://github.com/2FastLabs/agent-squad\n## S3* — Complementary audit\n\n- State: —\n- Function: no materially independent complementary audit path is established that challenges ordinary operational claims and returns findings into corrective control.\n- Disturbance / variety regulated: not established as S3*.\n- Decisive decision or feedback right: not established for independent audit judgment.\n- Decision owner: not established for S3*.\n- Supporting / enforcement m"
+        },
+        {
+          "native_rank": 7,
+          "source_id": "opensiro/vsm-harness-index:metaharness",
+          "document_name": "metaharness.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "decisions",
+            "feedback",
+            "unit"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "b52079c380c485f1607827ab460006a6f762d68a1b152466268159a23f0ba6aa",
+          "chunk_preview": "Project: MetaHarness\nRepository: https://github.com/ruvnet/metaharness\n## S1 — Operations\n\n- State: A\n- Function: execute a candidate harness as an agentic work unit and/or produce a concrete harness-engineering change through a first-party model/context/action loop, returning observable task or repository outcomes to the evolution organization.\n- Disturbance / variety regulated: changing task prompts, candidate policy guidance, repository/harness state, model responses, failed traces, test/tool"
+        },
+        {
+          "native_rank": 8,
+          "source_id": "opensiro/vsm-harness-index:pasclaude",
+          "document_name": "pasclaude.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "decisions",
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "444ee7054bddd999ae3dd8c63c2ac27f701085a3bcfec83a37a76c94d70e32c2",
+          "chunk_preview": "Project: PasClaude\nRepository: https://github.com/seanrobertwright/PasClaude\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no material whole-current organizational control function distinct from one coding S1 and deterministic runtime safeguards was established.\n- Disturbance / variety regulated: not established at S3 level; located controls regulate one session/tool loop rather than current commitments/resources across an operational population.\n- Decisive decision or feedback right: n"
+        },
+        {
+          "native_rank": 9,
+          "source_id": "opensiro/vsm-harness-index:carbon",
+          "document_name": "carbon.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "decisions",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "f73f85105fb45942549affa3d29d6544728a9a16e183f5047e1ae8aa9312f88d",
+          "chunk_preview": "Project: Carbon\nRepository: https://github.com/thecarbonlayer/carbon\n## S1 — Operations\n\n- State: A\n- Function: perform a coding task through an autonomous model-driven loop that inspects project state, chooses tools, edits files, executes commands, retrieves prior context, delegates bounded research and reacts to returned evidence.\n- Disturbance / variety regulated: ambiguous task requirements, repository/file state, code and test failures, tool errors, provider faults, context pressure, prior-"
+        },
+        {
+          "native_rank": 10,
+          "source_id": "opensiro/vsm-harness-index:deep-code",
+          "document_name": "deep-code.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "decisions",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "eebcd934d90268aa119b173129647156e1477b8285cb672fb9042c557947a4ec",
+          "chunk_preview": "Project: deep-code\nRepository: https://github.com/liwenka1/deep-code\n## S1 — Operations\n\n- State: A\n- Function: autonomously perform coding work through iterative model/tool decisions against the live workspace.\n- Disturbance / variety regulated: unfamiliar codebase state, incomplete requirements, command/build/test failures, tool errors, model/provider failures, context growth and permission/sandbox constraints.\n- Decisive decision or feedback right: choose the next repository/tool action, revi"
+        },
+        {
+          "native_rank": 11,
+          "source_id": "opensiro/vsm-harness-index:chad",
+          "document_name": "chad.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "7524e4ce33a50f9f8a8008f1bcf9ed892c12c75d101b7675efe7c5e6f507de91",
+          "chunk_preview": "Project: chad\nRepository: https://github.com/nathansutton/chad\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no material whole-system current-control function is established beyond the single S1 operation.\n- Disturbance / variety regulated: no portfolio of current S1 commitments/resources exists under a distinct current-control owner.\n- Decisive decision or feedback right: none established for S3.\n- Decision owner: none established.\n- Supporting / enforcement mechanisms: todo state, ste"
+        },
+        {
+          "native_rank": 12,
+          "source_id": "opensiro/vsm-harness-index:dscode",
+          "document_name": "dscode.md",
+          "function_heading": "## S4 — Intelligence / adaptation",
+          "query_overlap_terms": [
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "50aa543633dbca0a1858bb60cb81a0fc7b68017d070436d55117600be21e0de0",
+          "chunk_preview": "Project: DSCode\nRepository: https://github.com/thinkany-ai/dscode\n## S4 — Intelligence / adaptation\n\n- State: —\n- Function: no material outside-and-future intelligence/adaptation loop was established.\n- Disturbance / variety regulated: project instructions, skills, model/provider configuration, sessions and diagnostics enrich future operation, but no autonomous prospective environmental-modeling and persistent adaptation-selection loop was reconstructed.\n- Decisive decision or feedback right: no"
+        },
+        {
+          "native_rank": 13,
+          "source_id": "opensiro/vsm-harness-index:sema-coder",
+          "document_name": "sema-coder.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "decisions",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "caf1c7b58e98fbee1e91b13ada649f8a71fdbd51324729e1dea45e08712db9a4",
+          "chunk_preview": "Project: Sema Coder\nRepository: https://github.com/sema-lisp/sema-coder\n## S1 — Operations\n\n- State: A\n- Function: perform environment-facing software-engineering work by selecting repository reads/searches/edits, shell/test actions and verification steps, observing their results and iterating toward the requested outcome.\n- Disturbance / variety regulated: heterogeneous source/build/test state, ambiguous implementation choices, command/tool outcomes, background-process state, provider errors, c"
+        },
+        {
+          "native_rank": 14,
+          "source_id": "opensiro/vsm-harness-index:airecon",
+          "document_name": "airecon.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "decisions",
+            "diagnostics",
+            "feedback"
+          ],
+          "overlap_count": 3,
+          "chunk_sha256": "79257b95eff2294894f311585a10dbfd4169b6c5e6a9e60c43648eed07d80138",
+          "chunk_preview": "Project: AIRecon\nRepository: https://github.com/pikpikcu/airecon\n## S3* — Complementary audit\n\n- State: C\n- Function: Challenge the operating model's submitted vulnerability/report assertions through an independent raw target replay/negative-control and alternative evidence path and return blocking or lowered confidence before publication.\n- Disturbance / variety regulated: Hallucinated vulnerabilities, unrepeatable injection claims, WAF/redirect artifacts, volatile page content, misleading HTTP"
+        },
+        {
+          "native_rank": 15,
+          "source_id": "opensiro/vsm-harness-index:codebot",
+          "document_name": "codebot.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "decisions",
+            "feedback"
+          ],
+          "overlap_count": 2,
+          "chunk_sha256": "90bf7ff23dbc033fe417a84c007759e9161b1d13f9ee6b552efd95cdaae0d732",
+          "chunk_preview": "Project: Codebot\nRepository: https://github.com/voocel/codebot\n## S1 — Operations\n\n- State: A\n- Function: autonomously perform coding and repository work through a model-driven tool feedback loop.\n- Disturbance / variety regulated: unfamiliar codebases, changing file state, shell/build/test failures, tool/provider errors, context limits, long-running goals, user constraints and delegated subtask uncertainty.\n- Decisive decision or feedback right: choose the next coding/investigation/tool action,"
+        }
+      ]
+    },
+    {
+      "query_id": "D07-negative-control",
+      "query": "astronomy telescope orbital mechanics",
+      "status": "RETURNED",
+      "native_hits": 15,
+      "literal_nonzero_overlap": 8,
+      "hits": [
+        {
+          "native_rank": 1,
+          "source_id": "opensiro/vsm-harness-index:bbarit-oss",
+          "document_name": "bbarit-oss.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "mechanics"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "230aeedf59f54590d544c89f18625d134f2ae4b58a89fe1565a23090af4107dc",
+          "chunk_preview": "Project: bbarit-oss\nRepository: https://github.com/bbarit/bbarit-agent-oss\n## S3 — Inside-and-now control\n\n- State: —\n- Function: No distinct ongoing whole-current operations manager with rights over multiple worker commitments.\n- Disturbance / variety regulated: Live child failures, competing task commitments, resource allocation and work priority could require project-wide intervention.\n- Decisive decision or feedback right: No function-specific whole-current decision established; the code lau"
+        },
+        {
+          "native_rank": 2,
+          "source_id": "opensiro/vsm-harness-index:codebot",
+          "document_name": "codebot.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "mechanics"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "90bf7ff23dbc033fe417a84c007759e9161b1d13f9ee6b552efd95cdaae0d732",
+          "chunk_preview": "Project: Codebot\nRepository: https://github.com/voocel/codebot\n## S1 — Operations\n\n- State: A\n- Function: autonomously perform coding and repository work through a model-driven tool feedback loop.\n- Disturbance / variety regulated: unfamiliar codebases, changing file state, shell/build/test failures, tool/provider errors, context limits, long-running goals, user constraints and delegated subtask uncertainty.\n- Decisive decision or feedback right: choose the next coding/investigation/tool action,"
+        },
+        {
+          "native_rank": 3,
+          "source_id": "opensiro/vsm-harness-index:smelt",
+          "document_name": "smelt.md",
+          "function_heading": "## S2 — Coordination",
+          "query_overlap_terms": [
+            "mechanics"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "15d7f50d647888456da9b11548271991e5f8db4abfe134cce95d41ae5d374e5c",
+          "chunk_preview": "Project: Smelt\nRepository: https://github.com/leonardcser/smelt\n## S2 — Coordination\n\n- State: —\n- Function: no material first-party inter-S1 coordination function is established.\n- Disturbance / variety regulated: no distinct standard operational S1 peers are instantiated whose recurring interference is placed under a coordination feedback loop.\n- Decisive decision or feedback right: none established.\n- Decision owner: none established.\n- Supporting / enforcement mechanisms: concurrent tool cal"
+        },
+        {
+          "native_rank": 4,
+          "source_id": "opensiro/vsm-harness-index:water",
+          "document_name": "water.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [
+            "mechanics"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "da92e47b5409d2bddefe5cff11ca2b8c7efafdaa2a2fa53aa7c52a9bad395038",
+          "chunk_preview": "Project: Water\nRepository: https://github.com/manthanguptaa/water\n## S1 — Operations\n\n- State: A\n- Function: autonomously execute an assigned task through a model-controlled Think-Act-Observe-Repeat loop using first-party Water tools and returned observations.\n- Disturbance / variety regulated: task ambiguity, changing tool/environment state, tool failures/results, intermediate evidence and uncertainty about which action should be taken next.\n- Decisive decision or feedback right: select substan"
+        },
+        {
+          "native_rank": 5,
+          "source_id": "opensiro/vsm-harness-index:lobehub",
+          "document_name": "lobehub.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [
+            "mechanics"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "db90b6e09e304dbf2b529adc12b8cd124e17a31c95501034649f0c95f7b96b8b",
+          "chunk_preview": "Project: LobeHub\nRepository: https://github.com/lobehub/lobehub\n## S3* — Complementary audit\n\n- State: C\n- Function: review another agent's produced work through a distinct reviewer/editor role and return critique into revision/re-review.\n- Disturbance / variety regulated: incomplete, unclear, inconsistent or low-quality outputs that require a second perspective before acceptance.\n- Decisive decision or feedback right: judge produced work, issue feedback and require/refine another contribution.\n"
+        },
+        {
+          "native_rank": 6,
+          "source_id": "opensiro/vsm-harness-index:beagle",
+          "document_name": "beagle.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "mechanics"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "9264cc1f18af9aebdb879e312da2bbfb6273044fae6be7281c96992ff9862986",
+          "chunk_preview": "Project: Beagle\nRepository: https://github.com/SalesforceAIResearch/Beagle\n## S3 — Inside-and-now control\n\n- State: —\n- Function: no distinct whole-system current-control function is established separately from S1 execution and the prospective S4 evolution/search loop.\n- Disturbance / variety regulated: campaign status, candidate scores, rollout failures, budgets/concurrency and genealogy state are tracked, but reviewed interventions are deterministic lifecycle/search mechanics or future-capabil"
+        },
+        {
+          "native_rank": 7,
+          "source_id": "opensiro/vsm-harness-index:hypha",
+          "document_name": "hypha.md",
+          "function_heading": "## S2 — Coordination",
+          "query_overlap_terms": [
+            "mechanics"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "3a62a3dcde9f900ed85b8c132e6e1ae0422f040f036794b8431e6256221bb408",
+          "chunk_preview": "Project: Hypha\nRepository: https://github.com/CodeSoul-co/Hypha\n## S2 — Coordination\n\n- State: —\n- Function: no material first-party S2 relation is established at the assessed deployment recursion.\n- Disturbance / variety regulated: no complete qualifying inter-S1 interference/oscillation witness is established in the standard frozen runtime.\n- Decisive decision or feedback right: not established.\n- Decision owner: none established for S2 at this boundary.\n- Supporting / enforcement mechanisms: "
+        },
+        {
+          "native_rank": 8,
+          "source_id": "opensiro/vsm-harness-index:covia",
+          "document_name": "covia.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [
+            "mechanics"
+          ],
+          "overlap_count": 1,
+          "chunk_sha256": "51390bc127b7f4c075fa42a45cdbc62b3b2053541d763a95dcbba25bc524505c",
+          "chunk_preview": "Project: Covia\nRepository: https://github.com/covia-ai/covia\n## S3 — Inside-and-now control\n\n- State: ?\n- Function: A plausible, shipped current *venue-service* administration path exists, but whether it closes VSM S3 over the venue's live S1 operations is unresolved.\n- Disturbance / variety regulated: Availability of shared adapters/modules, venue-level service constraints and possible conflict among concurrently running agent jobs from different caller identities.\n- Decisive decision or feedba"
+        },
+        {
+          "native_rank": 9,
+          "source_id": "opensiro/vsm-harness-index:orca-agent",
+          "document_name": "orca-agent.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [],
+          "overlap_count": 0,
+          "chunk_sha256": "1b3f5524e7b75a438648415fd899586723c3eb6fffde38997e7045b0635a935c",
+          "chunk_preview": "Project: Orca Agent\nRepository: https://github.com/echoVic/orca-agent\n## S1 — Operations\n\n- State: A\n- Function: perform environment-facing software-development work by interpreting a task, inspecting repository/process evidence, choosing coding actions, mutating files, running commands/tests and reacting to returned results.\n- Disturbance / variety regulated: heterogeneous source trees, build/test failures, command output, changing workspace state, external information, model/tool errors and im"
+        },
+        {
+          "native_rank": 10,
+          "source_id": "opensiro/vsm-harness-index:orca-agent",
+          "document_name": "orca-agent.md",
+          "function_heading": "## S2 — Coordination",
+          "query_overlap_terms": [],
+          "overlap_count": 0,
+          "chunk_sha256": "eb6199a2b5a6a66fe24cec24942455583d0ebfefe93177527bf1456f1d8a3c8c",
+          "chunk_preview": "Project: Orca Agent\nRepository: https://github.com/echoVic/orca-agent\n## S2 — Coordination\n\n- State: A\n- Function: attenuate destructive interference between concurrently executing Orca S1 units by letting the parent agent assign non-overlapping work and, where shared-checkout file mutation would collide, place a child in a separate detached worktree.\n- Disturbance / variety regulated: concurrent main/child or child/child coding work can inspect and mutate the same checkout, causing overlapping "
+        },
+        {
+          "native_rank": 11,
+          "source_id": "opensiro/vsm-harness-index:orca-agent",
+          "document_name": "orca-agent.md",
+          "function_heading": "## S3 — Inside-and-now control",
+          "query_overlap_terms": [],
+          "overlap_count": 0,
+          "chunk_sha256": "365be2af00a151bbbfe08badf154d7a8325f74085f9602a4473fb9333bfe7f7e",
+          "chunk_preview": "Project: Orca Agent\nRepository: https://github.com/echoVic/orca-agent\n## S3 — Inside-and-now control\n\n- State: A\n- Function: regulate the current multi-task Orca organization by observing active work and intervening in running child commitments when current execution needs reprioritization, stopping or steering.\n- Disturbance / variety regulated: children can be slow, wrong-direction, blocked, redundant, awaiting interaction, or no longer aligned with the parent actor's evolving current understa"
+        },
+        {
+          "native_rank": 12,
+          "source_id": "opensiro/vsm-harness-index:orca-agent",
+          "document_name": "orca-agent.md",
+          "function_heading": "## S3* — Complementary audit",
+          "query_overlap_terms": [],
+          "overlap_count": 0,
+          "chunk_sha256": "c70df8c5def843a1a1455f4f3d077c0412f1a44caacf0bc0a43e8e626bb1f857",
+          "chunk_preview": "Project: Orca Agent\nRepository: https://github.com/echoVic/orca-agent\n## S3* — Complementary audit\n\n- State: A\n- Function: independently challenge the operational actor's claim that a persistent Goal is complete or genuinely blocked before Orca accepts a terminal organizational state.\n- Disturbance / variety regulated: an operational model can prematurely declare success, cite weak evidence, or classify a still-model-fixable gap as an external blocker.\n- Decisive decision or feedback right: judg"
+        },
+        {
+          "native_rank": 13,
+          "source_id": "opensiro/vsm-harness-index:orca-agent",
+          "document_name": "orca-agent.md",
+          "function_heading": "## S4 — Outside-and-then intelligence",
+          "query_overlap_terms": [],
+          "overlap_count": 0,
+          "chunk_sha256": "7dc22c931a7338e5a796246715c5fad0676caa573972ce09e3cd427c5d087a6e",
+          "chunk_preview": "Project: Orca Agent\nRepository: https://github.com/echoVic/orca-agent\n## S4 — Outside-and-then intelligence\n\n- State: —\n- Function: no material first-party prospective organizational adaptation loop was established at the selected mission recursion.\n- Disturbance / variety regulated: not established at S4 ownership level.\n- Decisive decision or feedback right: not established. Orca can search the web, remember project facts, retain sessions, resume children and execute dynamic workflows, but tho"
+        },
+        {
+          "native_rank": 14,
+          "source_id": "opensiro/vsm-harness-index:orca-agent",
+          "document_name": "orca-agent.md",
+          "function_heading": "## S5 — Policy and identity",
+          "query_overlap_terms": [],
+          "overlap_count": 0,
+          "chunk_sha256": "f8627deaa24a1eca2694679030a754a98c4abac0955c161e7908449d43daa9e0",
+          "chunk_preview": "Project: Orca Agent\nRepository: https://github.com/echoVic/orca-agent\n## S5 — Policy and identity\n\n- State: —\n- Function: no material first-party identity/ultimate-policy closure was established at the selected Orca mission recursion.\n- Disturbance / variety regulated: not established at S5 ownership level.\n- Decisive decision or feedback right: not established. User goals, trust, approval modes, permission rules, project instructions and sandbox boundaries constrain or direct operation, but the"
+        },
+        {
+          "native_rank": 15,
+          "source_id": "opensiro/vsm-harness-index:redteam",
+          "document_name": "redteam.md",
+          "function_heading": "## S1 — Operations",
+          "query_overlap_terms": [],
+          "overlap_count": 0,
+          "chunk_sha256": "74916dba5f4e1c1f0a863be30736b4b76da1db85f38316d3f24d6592794fd610",
+          "chunk_preview": "Project: redteam\nRepository: https://github.com/AscendyProject/redteam\n## S1 — Operations\n\n- State: A\n- Function: perform task-local software-engineering work by deciding and applying code changes needed to satisfy the approved task plan.\n- Disturbance / variety regulated: repository/task uncertainty, implementation choices, tool/runtime feedback, verification failures and corrective feedback returned from prior review rounds.\n- Decisive decision or feedback right: choose the concrete implementa"
+        }
+      ]
+    }
+  ]
+}

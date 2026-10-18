@@ -1,0 +1,50 @@
+D01 hits 15 nonzero 15
+  1 animaworks ## S2 — Coordination tokens compatibility,upgrade
+  2 oh-my-claudecode ## S1 — Operations tokens dependency,failure
+  3 cocoplus ## S2 — Coordination tokens dependency,failure
+  4 carbon ## S3* — Complementary audit tokens failure,repair
+  5 cocoplus ## S4 — Outside-and-then intelligence tokens upgrade
+  6 agent-orchestrator-stefan1294 ## S4 — Outside-and-then intelligence tokens compatibility,failure
+D02 hits 15 nonzero 15
+  1 oh-my-claudecode ## S3* — Complementary audit tokens failure,fix,tests
+  2 dscode ## S1 — Operations tokens inspect,patch
+  3 scoot ## S3* — Complementary audit tokens inspect,patch,run,tests
+  4 bernstein ## S3 — Inside-and-now control tokens failure,patch,run
+  5 metis ## S3* — Complementary audit tokens failure,inspect,run,tests
+  6 aivo-code ## S3* — Complementary audit tokens failure,inspect,run,tests
+D03 hits 15 nonzero 15
+  1 hankweave ## S3 — Inside-and-now control tokens commands,execute,retry
+  2 superharness ## S3 — Inside-and-now control tokens changes,commands,retry
+  3 pydantic-ai-harness ## S3 — Inside-and-now control tokens changes,execute,retry
+  4 helpofai ## S3 — Inside-and-now control tokens changes,execute,retry
+  5 ashcode ## S3 — Inside-and-now control tokens commands,execute,shell
+  6 ashcode ## S1 — Operations tokens changes,execute,shell
+D04 hits 15 nonzero 15
+  1 openharness ## S4 — Outside-and-then intelligence tokens installation,package
+  2 nemocode ## S4 — Intelligence / adaptation tokens environment,installation,recovery
+  3 openharness ## S5 — Policy and identity tokens environment,installation,package
+  4 travis234 ## S4 — Outside-and-then intelligence tokens environment,installation,package
+  5 openharness ## S2 — Coordination tokens installation,package
+  6 openharness ## S3* — Complementary audit tokens installation,package
+D05 hits 15 nonzero 15
+  1 ahe ## S3 — Inside-and-now control tokens bounded,execution,iterations,timeout
+  2 go-agent ## S3 — Inside-and-now control tokens execution,retries,timeout,tool
+  3 zhi ## S3 — Inside-and-now control tokens bounded,retries,timeout
+  4 skyvern ## S1 — Operations tokens execution,retries,timeout,tool
+  5 bitrouter ## S1 — Operations tokens bounded,execution,timeout,tool
+  6 ashcode ## S3 — Inside-and-now control tokens bounded,timeout,tool
+D06 hits 15 nonzero 15
+  1 pasclaude ## S3* — Complementary audit tokens diagnostics,feedback
+  2 nemocode ## S1 — Operations tokens diagnostics,feedback
+  3 nemocode ## S3* — Complementary audit tokens diagnostics,feedback
+  4 dscode ## S1 — Operations tokens diagnostics,feedback
+  5 lean-coder ## S3* — Complementary audit tokens diagnostics,feedback
+  6 agent-squad ## S3* — Complementary audit tokens diagnostics,feedback
+D07-negative-control hits 15 nonzero 8
+  1 bbarit-oss ## S3 — Inside-and-now control tokens mechanics
+  2 codebot ## S1 — Operations tokens mechanics
+  3 smelt ## S2 — Coordination tokens mechanics
+  4 water ## S1 — Operations tokens mechanics
+  5 lobehub ## S3* — Complementary audit tokens mechanics
+  6 beagle ## S3 — Inside-and-now control tokens mechanics
+WROTE /dev/shm/opensiro-flash-fresh-20261018-1737/experiment/receipts/discovery/hit-index.json
