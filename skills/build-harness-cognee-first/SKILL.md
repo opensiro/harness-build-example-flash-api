@@ -85,4 +85,4 @@ The overall skill can succeed as a **build-process/protocol demonstration** with
 - Append-only Decision Trace, links to relevant implementation commits, and baseline/adapted evaluation receipts.
 - Explicit process/build/evaluation-level/model-quality statuses; a real-model run is NOT RUN until its own receipt exists.
 
-**Full success** requires both Cognee and source-selection gates, implemented baseline/adapted variants, and recorded tests with honest claims. If a gate fails, publish a bounded partial report instead of calling the entire workflow successful.
+**Full build-process success** requires passing Cognee and source-selection gates, a runnable baseline, implementation and exercise of the chosen adaptation **when one was actually selected**, and a recorded evaluation with honest claims. A source-grounded no-adaptation decision can complete as a transparent null finding; do not invent a modified variant or call it evidence of uplift. If a gate fails, publish a bounded partial report instead of calling the entire workflow successful.
